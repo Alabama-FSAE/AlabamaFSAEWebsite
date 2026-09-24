@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sponsors — Crimson Racing</title>
+<meta name="description" content="Meet the sponsors who make Crimson Racing possible, and learn how your company or organization can support the team.">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/favicon/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/components.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<div data-include="/partials/header.html"></div>
+
+<main id="main">
+  <section class="section" style="padding-bottom:0;">
+    <div class="container">
+      <span class="eyebrow">Sponsors</span>
+      <h1 style="font-size:var(--text-3xl); margin-block:var(--space-3) var(--space-6);">Built with the support of our sponsors.</h1>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="toggle-banner" role="tablist" aria-label="Sponsors page sections">
+      <button class="toggle-banner__side" data-target="panel-sponsors" aria-pressed="true">
+        <span class="toggle-banner__side-label">Sponsors</span>
+        <span class="toggle-banner__side-sub">The companies behind the car</span>
+      </button>
+      <button class="toggle-banner__side" data-target="panel-give" aria-pressed="false">
+        <span class="toggle-banner__side-label">Sponsor Us</span>
+        <span class="toggle-banner__side-sub">How to support the team</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= Sponsors (logo wall) ================= -->
+  <section id="panel-sponsors" class="toggle-panel is-active section">
+    <div class="container">
+      <p class="text-muted" style="font-size:var(--text-lg); max-width:70ch; margin-bottom:var(--space-7);">
+        Crimson Racing exists because of the companies and organizations who back us every
+        season — from covering material and machining costs to donating parts and expertise
+        directly. Thank you.
+      </p>
+      <div id="sponsor-tiers"></div>
+    </div>
+  </section>
+
+  <!-- ================= Sponsor Us (how to give) ================= -->
+  <section id="panel-give" class="toggle-panel section">
+    <div class="container" style="max-width:820px;">
+      <p style="font-size:var(--text-lg); margin-bottom:var(--space-6);">
+        Sample text: replace with the team's real pitch for why a company should sponsor
+        Crimson Racing — what sponsorship funds, and what the team can offer in return
+        (logo placement, shop visits, resume access, etc.).
+      </p>
+
+      <div class="role-list__item">
+        <h3>Give In-Kind or Send a Logo</h3>
+        <p>Sample text: instructions for a company that wants to donate parts, materials, or services, and how to send a logo for placement on the car and site once a sponsorship is confirmed. Route inquiries through the <a href="/contact.html" style="color:var(--color-accent); font-weight:700;">Contact page</a>.</p>
+      </div>
+      <div class="role-list__item">
+        <h3>Give Through the University of Alabama Gift Fund</h3>
+        <p>Sample text: describe the UA Gift Fund donation process here, with a link to the official giving page once available.</p>
+      </div>
+      <div class="role-list__item">
+        <h3>Crowdfunding</h3>
+        <p>Sample text: link to the team's current seasonal crowdfunding campaign here when one is active.</p>
+      </div>
+
+      <a href="/contact.html" class="btn btn--primary" style="margin-top:var(--space-6);">Get in Touch About Sponsoring</a>
+    </div>
+  </section>
+</main>
+
+<div data-include="/partials/footer.html"></div>
+
+<script src="/js/include.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/toggle-banner.js"></script>
+<script src="/js/sponsors-page.js"></script>
+</body>
+</html>

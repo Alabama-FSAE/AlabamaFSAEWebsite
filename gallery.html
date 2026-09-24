@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Crimson Racing</title>
+<meta name="description" content="Photos and videos from Crimson Racing's builds, competitions, and events, organized by year.">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/favicon/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/components.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<div data-include="/partials/header.html"></div>
+
+<main id="main">
+  <section class="section" style="padding-bottom:0;">
+    <div class="container">
+      <span class="eyebrow">Gallery</span>
+      <h1 style="font-size:var(--text-3xl); margin-block:var(--space-3) var(--space-6);">Builds, competitions &amp; everything between.</h1>
+    </div>
+  </section>
+
+  <section class="container section" style="padding-top:0;">
+    <div class="gallery-year-tabs" id="gallery-year-tabs" role="tablist" aria-label="Gallery year"></div>
+    <div class="gallery-filters" id="gallery-filters" aria-label="Filter by category"></div>
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </section>
+</main>
+
+<div data-include="/partials/footer.html"></div>
+
+<script src="/js/include.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/gallery-page.js"></script>
+</body>
+</html>

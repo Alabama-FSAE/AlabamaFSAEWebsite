@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Crimson Racing</title>
+<meta name="description" content="Get in touch with Crimson Racing — questions, sponsorship inquiries, and press requests all go to one inbox.">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/favicon/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/components.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<div data-include="/partials/header.html"></div>
+
+<main id="main">
+  <section class="section" style="padding-bottom:0;">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1 style="font-size:var(--text-3xl); margin-block:var(--space-3) var(--space-6);">Get in touch.</h1>
+    </div>
+  </section>
+
+  <section class="container section" style="padding-top:0;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:var(--space-8);">
+
+      <!-- Form: replace the Formspree endpoint below with the team's real form ID.
+           Sign up free at formspree.io, create a form, and swap the URL —
+           no other code changes needed. See README.md. -->
+      <div>
+        <form action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none">
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Social links + shop location -->
+      <div>
+        <h2 style="font-size:var(--text-lg); margin-bottom:var(--space-4); padding-bottom:var(--space-2); border-bottom:2px solid var(--color-accent); display:inline-block;">Find Us</h2>
+        <div class="social-links" style="margin-bottom:var(--space-6);">
+          <a href="https://www.instagram.com/alabamafsae/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/crimsonracing" target="_blank" rel="noopener">Facebook</a>
+        </div>
+        <!-- Keyless Google Maps embed — replace the query below with the shop's
+             real address via Google Maps → Share → Embed a map. No API key required. -->
+        <div style="aspect-ratio:4/3; border:var(--border-hairline);">
+          <iframe
+            src="https://www.google.com/maps?q=University+of+Alabama,Tuscaloosa,AL&output=embed"
+            width="100%" height="100%" style="border:0;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Crimson Racing shop location">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<div data-include="/partials/footer.html"></div>
+
+<script src="/js/include.js"></script>
+<script src="/js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crimson Racing — Formula SAE, The University of Alabama</title>
+<meta name="description" content="Crimson Racing is the University of Alabama's Formula SAE team, designing, building, and racing a formula-style car from the ground up every season.">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/favicon/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/components.css">
+<link rel="stylesheet" href="/css/loading-screen.css">
+</head>
+<body>
+
+<!-- Loading screen: home page only, plays every visit. See js/loading-screen.js -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loader-stage">
+    <div class="loader-logo"><img src="/assets/logo/crimson-racing-logo-transparent.png" alt=""></div>
+    <div class="loader-track"><div class="loader-track__flag"></div></div>
+    <div class="loader-speedlines"><span></span><span></span><span></span></div>
+    <div class="loader-car">
+      <svg viewBox="0 0 200 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="172" y="18" width="4" height="20" fill="#9E1B32"/>
+        <rect x="158" y="10" width="34" height="7" rx="1" fill="#9E1B32"/>
+        <path d="M20 50 L45 38 L100 30 L150 32 L168 40 L168 50 L20 50 Z" fill="#9E1B32"/>
+        <path d="M85 30 Q95 18 110 22 L118 30 Z" fill="#9E1B32"/>
+        <rect x="4" y="46" width="30" height="6" rx="1" fill="#9E1B32"/>
+        <path d="M20 44 L45 38 L45 48 L20 50 Z" fill="#9E1B32"/>
+        <circle cx="42" cy="54" r="13" fill="#212124"/>
+        <circle cx="42" cy="54" r="6" fill="#9097A0"/>
+        <circle cx="158" cy="54" r="15" fill="#212124"/>
+        <circle cx="158" cy="54" r="7" fill="#9097A0"/>
+      </svg>
+    </div>
+  </div>
+  <button class="loader-skip" type="button">Skip</button>
+</div>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<div data-include="/partials/header.html"></div>
+
+<main id="main">
+
+  <!-- Hero: latest car + welcome message -->
+  <section class="section">
+    <div class="container" style="display:grid; grid-template-columns: 1.1fr 1fr; gap: var(--space-8); align-items:center;">
+      <div>
+        <span class="eyebrow">2025 Season — CR-25</span>
+        <h1 style="font-size:var(--text-4xl); margin-block:var(--space-3);">Built by students.<br>Raced against the world.</h1>
+        <p class="text-muted" style="font-size:var(--text-lg); max-width:48ch; margin-bottom:var(--space-6);">
+          Crimson Racing is the University of Alabama's Formula SAE team. Every season, a
+          student-run engineering organization designs, manufactures, and races a
+          formula-style car from a blank sheet of paper — competing against nearly 100
+          collegiate teams from around the world.
+        </p>
+        <div style="display:flex; gap:var(--space-4);">
+          <a href="/cars/2025.html" class="btn btn--primary">See the 2025 Car</a>
+          <a href="/join-us.html" class="btn btn--secondary">Join the Team</a>
+        </div>
+      </div>
+      <div class="placeholder" style="aspect-ratio: 4/3;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M8 5l1.3-2h5.4L16 5"/></svg>
+        <span class="placeholder__caption">CR-25 — Hero Photo</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we're about -->
+  <section class="section section--subtle">
+    <div class="container">
+      <h2 style="font-size:var(--text-2xl); margin-bottom:var(--space-7); max-width:20ch;">What we're about</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <span class="pillar__num">Development</span>
+          <h3>Real engineering, start to finish</h3>
+          <p>Every member works through the full design cycle — concept, analysis, manufacturing, and validation — on a real vehicle, not a simulation.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar__num">Teamwork</span>
+          <h3>Ten subteams, one car</h3>
+          <p>Aero, chassis, electrical, powertrain, suspension, and more all have to work as one system by competition day.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar__num">Design</span>
+          <h3>Defend every decision</h3>
+          <p>Judges at competition interrogate our design choices directly — every part on the car needs a reason to be there.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar__num">Competition</span>
+          <h3>Measured against the best</h3>
+          <p>We compete head-to-head against top collegiate engineering programs at Formula SAE events each year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent results snapshot -->
+  <section class="section">
+    <div class="container">
+      <h2 style="font-size:var(--text-2xl); margin-bottom:var(--space-2);">Recent results</h2>
+      <p class="text-muted" style="margin-bottom:var(--space-7);">Sample data — update with the latest competition results.</p>
+      <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:var(--space-5); margin-bottom:var(--space-6);">
+        <div class="stat-card"><span class="stat-card__value">TBD</span><span class="stat-card__label">Overall Placement, 2025</span></div>
+        <div class="stat-card"><span class="stat-card__value">TBD</span><span class="stat-card__label">Design Event Score</span></div>
+        <div class="stat-card"><span class="stat-card__value">TBD</span><span class="stat-card__label">Endurance Finish</span></div>
+      </div>
+      <a href="/cars/2025.html" class="btn btn--secondary">See full CR-25 results &amp; specs</a>
+    </div>
+  </section>
+
+</main>
+
+<div data-include="/partials/footer.html"></div>
+
+<script src="/js/include.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/loading-screen.js"></script>
+</body>
+</html>

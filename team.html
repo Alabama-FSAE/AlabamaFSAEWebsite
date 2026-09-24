@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team — Crimson Racing</title>
+<meta name="description" content="Meet Crimson Racing's management team and ten subteams — the students who design, build, and race the car every season.">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/favicon/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/components.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<div data-include="/partials/header.html"></div>
+
+<main id="main">
+  <section class="section" style="padding-bottom:0;">
+    <div class="container">
+      <span class="eyebrow">Team</span>
+      <h1 style="font-size:var(--text-3xl); margin-block:var(--space-3) var(--space-4);">Ten subteams. One car.</h1>
+      <p class="text-muted" style="font-size:var(--text-lg); max-width:60ch; margin-bottom:var(--space-7);">
+        Every part on the car is owned by a subteam, and every subteam answers to the same
+        management structure. Click through to any subteam below for its mission and the
+        specific engineering roles that make it up.
+      </p>
+    </div>
+  </section>
+
+  <!-- Management -->
+  <section class="container" style="margin-bottom:var(--space-8);">
+    <h2 style="font-size:var(--text-lg); margin-bottom:var(--space-5); padding-bottom:var(--space-2); border-bottom:2px solid var(--color-accent); display:inline-block;">Management</h2>
+    <div id="management-grid" class="people-grid"></div>
+  </section>
+
+  <!-- Subteams -->
+  <section class="container" style="margin-bottom:var(--space-8);">
+    <h2 style="font-size:var(--text-lg); margin-bottom:var(--space-5); padding-bottom:var(--space-2); border-bottom:2px solid var(--color-accent); display:inline-block;">Subteams</h2>
+    <div id="subteam-grid" class="subteam-grid"></div>
+  </section>
+</main>
+
+<div data-include="/partials/footer.html"></div>
+
+<script src="/js/include.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/team-page.js"></script>
+</body>
+</html>
