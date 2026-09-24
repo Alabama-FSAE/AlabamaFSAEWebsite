@@ -1,0 +1,10 @@
+{
+  "_readme": "SAMPLE DATA. Replace with real sponsor names/logos/links. Add or remove entries per tier freely — the page renders whatever is here.",
+  "tiers": [
+    { "name": "Platinum", "sponsors": [ { "name": "Sponsor Logo", "url": "#" }, { "name": "Sponsor Logo", "url": "#" } ] },
+    { "name": "Crimson", "sponsors": [ { "name": "Sponsor Logo", "url": "#" }, { "name": "Sponsor Logo", "url": "#" } ] },
+    { "name": "Gold", "sponsors": [ { "name": "Sponsor Logo", "url": "#" }, { "name": "Sponsor Logo", "url": "#" }, { "name": "Sponsor Logo", "url": "#" } ] },
+    { "name": "Silver", "sponsors": [ { "name": "Sponsor Logo", "url": "#" }, { "name": "Sponsor Logo", "url": "#" }, { "name": "Sponsor Logo", "url": "#" } ] },
+    { "name": "Bronze", "sponsors": [ { "name": "Sponsor Logo", "url": "#" }, { "name": "Sponsor Logo", "url": "#" }, { "name": "Sponsor Logo", "url": "#" }, { "name": "Sponsor Logo", "url": "#" } ] }
+  ]
+}

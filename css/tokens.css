@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Crimson Racing — Design Tokens
+   Colors sourced from the University of Alabama's official web color system
+   (web.ua.edu/design/color) — WCAG 2.2 AA compliant scales.
+   Typography: Manrope (free), selected as the closest open substitute for
+   UA's licensed web typeface, Proxima Nova. Swap --font-sans below if a
+   Proxima Nova web license is ever secured.
+   ========================================================================== */
+
+:root {
+  /* ---- Color: Primary (Crimson Flame scale) ---- */
+  --color-primary-50:  #FCE4E9;
+  --color-primary-100: #F8C2CD;
+  --color-primary-200: #E87C90;
+  --color-primary-300: #E5425E;
+  --color-primary-400: #BE3047;
+  --color-primary-500: #9E1B32; /* Official UA Crimson Flame — the site's one accent color */
+  --color-primary-600: #821E2E;
+  --color-primary-700: #70202C;
+  --color-primary-800: #58232A;
+  --color-primary-900: #421A20;
+
+  /* ---- Color: Neutral (backgrounds, text, borders) ---- */
+  --color-neutral-0:   #FFFFFF;
+  --color-neutral-50:  #F2F3F4;
+  --color-neutral-100: #DFE2E5;
+  --color-neutral-200: #C6CBD0;
+  --color-neutral-300: #ACB2BA;
+  --color-neutral-400: #9097A0;
+  --color-neutral-500: #757C88;
+  --color-neutral-600: #5F646D;
+  --color-neutral-700: #4A4C54;
+  --color-neutral-800: #35363B;
+  --color-neutral-900: #212124;
+
+  /* ---- Color: Semantic (used sparingly) ---- */
+  --color-positive-500: #39A845;
+  --color-info-500:     #0070DD;
+
+  /* ---- Color roles ---- */
+  --color-bg:            var(--color-neutral-0);
+  --color-bg-subtle:     var(--color-neutral-50);
+  --color-text:          var(--color-neutral-900);
+  --color-text-muted:    var(--color-neutral-600);
+  --color-border:        var(--color-neutral-200);
+  --color-accent:        var(--color-primary-500);
+  --color-accent-hover:  var(--color-primary-600);
+  --color-accent-active: var(--color-primary-700);
+  --color-accent-tint:   var(--color-primary-50);
+
+  /* ---- Typography ---- */
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --text-xs:   0.8125rem;  /* 13px */
+  --text-sm:   0.9375rem;  /* 15px */
+  --text-base: 1.0625rem;  /* 17px */
+  --text-lg:   1.25rem;    /* 20px */
+  --text-xl:   1.625rem;   /* 26px */
+  --text-2xl:  2.25rem;    /* 36px */
+  --text-3xl:  3.25rem;    /* 52px */
+  --text-4xl:  4.5rem;     /* 72px */
+
+  --leading-tight:  1.1;
+  --leading-snug:   1.3;
+  --leading-normal: 1.6;
+
+  /* ---- Spacing scale ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 6.5rem;
+
+  /* ---- Layout ---- */
+  --content-width: 1280px;
+  --content-padding: clamp(1.25rem, 4vw, 3rem);
+  --border-radius: 3px; /* deliberately minimal — flat, architectural, not "SaaS card" rounded */
+  --border-hairline: 1px solid var(--color-border);
+
+  /* ---- Motion ---- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-standard: 250ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-standard: 0ms;
+  }
+}

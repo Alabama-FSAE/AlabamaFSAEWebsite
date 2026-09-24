@@ -1,0 +1,141 @@
+{
+  "_readme": "SAMPLE DATA. Replace names/bios/descriptions with real content. Roles are described generically rather than tied to individual senior engineers — update the role list each season without needing individual headshots.",
+  "management": [
+    { "role": "Team Manager", "name": "TBD", "bio": "Sample text: oversees overall team operations, timeline, and competition logistics." },
+    { "role": "Engineering Manager", "name": "TBD", "bio": "Sample text: oversees technical direction and coordination across all engineering subteams." },
+    { "role": "Business Manager", "name": "TBD", "bio": "Sample text: oversees sponsorship, budget, and outreach operations." }
+  ],
+  "subteams": [
+    {
+      "id": "aerodynamics",
+      "name": "Aerodynamics",
+      "leadName": "TBD",
+      "shortDescription": "Designs and validates the car's aero package for downforce and efficiency.",
+      "mission": "Sample text: describe the Aerodynamics subteam's mission, tools used (CFD, wind tunnel, track testing), and how it collaborates with Chassis and Powertrain here.",
+      "roles": [
+        { "title": "Front Wing", "description": "Sample text: owns front wing design, validation, and manufacturing." },
+        { "title": "Rear Wing", "description": "Sample text: owns rear wing design, validation, and manufacturing." },
+        { "title": "Undertray", "description": "Sample text: owns undertray and diffuser design." },
+        { "title": "Side Aero", "description": "Sample text: owns side pod and side aero element design." },
+        { "title": "Cooling", "description": "Sample text: owns cooling duct and airflow management design." }
+      ]
+    },
+    {
+      "id": "chassis",
+      "name": "Chassis",
+      "leadName": "TBD",
+      "shortDescription": "Designs the car's structural frame, ergonomics, and safety systems.",
+      "mission": "Sample text: describe the Chassis subteam's mission and design priorities (stiffness, weight, safety, driver fit) here.",
+      "roles": [
+        { "title": "Frame Design", "description": "Sample text: owns space-frame or monocoque structural design and FEA validation." },
+        { "title": "Impact Attenuator", "description": "Sample text: owns impact attenuator design and testing to rules compliance." },
+        { "title": "Ergonomics", "description": "Sample text: owns driver fit, pedal box, and seating position design." },
+        { "title": "Mounting & Brackets", "description": "Sample text: owns component mounting, brackets, and integration hardware." }
+      ]
+    },
+    {
+      "id": "electrical",
+      "name": "Electrical",
+      "leadName": "TBD",
+      "shortDescription": "Owns the car's low-voltage electrical systems, wiring, and driver interface.",
+      "mission": "Sample text: describe the Electrical subteam's mission and scope (LV systems, wiring harness, dash/DAQ) here.",
+      "roles": [
+        { "title": "Low-Voltage Systems", "description": "Sample text: owns LV power distribution and system architecture." },
+        { "title": "Wiring Harness", "description": "Sample text: owns harness design, routing, and fabrication." },
+        { "title": "Dash & Driver Interface", "description": "Sample text: owns steering wheel, dash display, and driver controls." },
+        { "title": "Data Acquisition", "description": "Sample text: owns sensor integration and telemetry logging." }
+      ]
+    },
+    {
+      "id": "ev-powersystems",
+      "name": "EV Powersystems",
+      "leadName": "TBD",
+      "shortDescription": "Develops the team's electric powertrain, accumulator, and high-voltage safety systems.",
+      "mission": "Sample text: describe the EV Powersystems subteam's mission and current program status (e.g., first electric vehicle development) here.",
+      "roles": [
+        { "title": "Accumulator", "description": "Sample text: owns battery pack design, cell selection, and thermal management." },
+        { "title": "Motor Controller", "description": "Sample text: owns motor/inverter selection, integration, and tuning." },
+        { "title": "High-Voltage Safety", "description": "Sample text: owns HV safety systems, insulation monitoring, and rules compliance." },
+        { "title": "Battery Management System", "description": "Sample text: owns BMS hardware/firmware for cell monitoring and balancing." }
+      ]
+    },
+    {
+      "id": "manufacturing",
+      "name": "Manufacturing",
+      "leadName": "TBD",
+      "shortDescription": "Turns every subteam's designs into physical parts.",
+      "mission": "Sample text: describe the Manufacturing subteam's mission, shop processes, and equipment (mill, lathe, composites layup, welding) here.",
+      "roles": [
+        { "title": "Composites", "description": "Sample text: owns carbon fiber layup and composite part fabrication." },
+        { "title": "Machining", "description": "Sample text: owns CNC/manual machining of metal components." },
+        { "title": "Welding & Fabrication", "description": "Sample text: owns frame welding and sheet metal fabrication." },
+        { "title": "Quality Control", "description": "Sample text: owns dimensional inspection and build quality standards." }
+      ]
+    },
+    {
+      "id": "powertrain",
+      "name": "Powertrain",
+      "leadName": "TBD",
+      "shortDescription": "Owns engine integration, drivetrain, and combustion powertrain systems.",
+      "mission": "Sample text: describe the Powertrain subteam's mission and current engine platform here.",
+      "roles": [
+        { "title": "Engine Integration", "description": "Sample text: owns engine mounting, tuning, and ECU calibration." },
+        { "title": "Drivetrain", "description": "Sample text: owns differential, driveshafts, and gearing selection." },
+        { "title": "Intake & Exhaust", "description": "Sample text: owns intake restrictor, plenum, and exhaust design." },
+        { "title": "Fuel Systems", "description": "Sample text: owns fuel delivery, tank, and injection system design." }
+      ]
+    },
+    {
+      "id": "suspension",
+      "name": "Suspension",
+      "leadName": "TBD",
+      "shortDescription": "Designs the car's suspension geometry, dampers, and steering.",
+      "mission": "Sample text: describe the Suspension subteam's mission and vehicle dynamics targets here.",
+      "roles": [
+        { "title": "Kinematics & Geometry", "description": "Sample text: owns suspension geometry design and simulation." },
+        { "title": "Dampers & Springs", "description": "Sample text: owns damper selection, tuning, and spring rates." },
+        { "title": "Steering", "description": "Sample text: owns steering rack, column, and linkage design." },
+        { "title": "Wheel Assembly", "description": "Sample text: owns uprights, hubs, and wheel/tire package." }
+      ]
+    },
+    {
+      "id": "systems-engineering",
+      "name": "Systems Engineering",
+      "leadName": "TBD",
+      "shortDescription": "Builds the simulation, controls software, and integration tools that tie every subteam together.",
+      "mission": "Sample text: describe the Systems Engineering subteam's mission (simulation, controls, vehicle dynamics modeling, integration) here.",
+      "roles": [
+        { "title": "Simulation & Modeling", "description": "Sample text: owns lap-time simulation and vehicle dynamics modeling." },
+        { "title": "Controls Software", "description": "Sample text: owns firmware and control system software development." },
+        { "title": "Vehicle Dynamics", "description": "Sample text: owns overall vehicle dynamics targets and correlation to simulation." },
+        { "title": "Integration Testing", "description": "Sample text: owns systems-level testing before track deployment." }
+      ]
+    },
+    {
+      "id": "communications",
+      "name": "Communications",
+      "leadName": "TBD",
+      "shortDescription": "Manages the team's public presence, media, and outreach.",
+      "mission": "Sample text: describe the Communications subteam's mission (social media, photography/videography, this website, outreach) here.",
+      "roles": [
+        { "title": "Social Media", "description": "Sample text: owns Instagram/Facebook content and posting schedule." },
+        { "title": "Photography & Videography", "description": "Sample text: owns event coverage and car photography/video." },
+        { "title": "Outreach", "description": "Sample text: owns community and K-12 outreach events." },
+        { "title": "Web & Design Documentation", "description": "Sample text: owns this website and design documentation materials." }
+      ]
+    },
+    {
+      "id": "sponsorship",
+      "name": "Sponsorship",
+      "leadName": "TBD",
+      "shortDescription": "Secures the funding and in-kind support that makes the season possible.",
+      "mission": "Sample text: describe the Sponsorship subteam's mission and approach to corporate/alumni relations here.",
+      "roles": [
+        { "title": "Corporate Relations", "description": "Sample text: owns outreach to and relationships with sponsor companies." },
+        { "title": "Grant & Proposal Writing", "description": "Sample text: owns sponsorship proposals and university grant applications." },
+        { "title": "Sponsor Fulfillment", "description": "Sample text: owns delivering on sponsor benefits (logo placement, reports, visits)." },
+        { "title": "Alumni Relations", "description": "Sample text: owns alumni network engagement and giving." }
+      ]
+    }
+  ]
+}

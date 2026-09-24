@@ -1,0 +1,23 @@
+{
+  "_readme": "SAMPLE DATA. Each item is a photo or video placeholder. Replace 'caption' text and add real items with type 'photo' or 'video'.",
+  "years": [
+    {
+      "year": 2025,
+      "items": [
+        { "category": "Competition", "type": "photo", "caption": "FSAE Michigan — Dynamic Events" },
+        { "category": "Competition", "type": "video", "caption": "Endurance Run Highlights" },
+        { "category": "Build Nights", "type": "photo", "caption": "Chassis Welding" },
+        { "category": "Build Nights", "type": "photo", "caption": "Aero Layup Night" },
+        { "category": "Socials", "type": "photo", "caption": "Team Banquet" }
+      ]
+    },
+    {
+      "year": 2024,
+      "items": [
+        { "category": "Competition", "type": "photo", "caption": "FSAE Michigan — Static Events" },
+        { "category": "Build Nights", "type": "photo", "caption": "Suspension Assembly" },
+        { "category": "Socials", "type": "photo", "caption": "Sponsor Shop Visit" }
+      ]
+    }
+  ]
+}

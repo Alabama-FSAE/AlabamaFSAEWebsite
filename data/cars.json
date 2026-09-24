@@ -1,0 +1,160 @@
+{
+  "_readme": "SAMPLE DATA. Replace every value below with real figures. To add a new car: (1) add an entry here with a unique 'id', (2) copy cars/2025.html to cars/<id>.html and change the data-car-id attribute, (3) add it to the 'cars' array in js/car-page.js ALL_CAR_IDS list so it appears in the sticky strip. See README.md.",
+  "cars": [
+    {
+      "id": "cr25",
+      "name": "CR-25",
+      "year": 2025,
+      "powertrainType": "combustion",
+      "designPhilosophy": "Sample text: describe this year's design philosophy here — what problem the team set out to solve, what changed from the previous car, and what the team is proudest of. Two to four sentences.",
+      "stats": [
+        { "label": "Overall Placement", "value": "TBD" },
+        { "label": "Weight", "value": "TBD" },
+        { "label": "Powertrain", "value": "Combustion" }
+      ],
+      "results": [
+        { "event": "Design", "score": "—", "max": 150 },
+        { "event": "Cost & Manufacturing", "score": "—", "max": 100 },
+        { "event": "Presentation", "score": "—", "max": 75 },
+        { "event": "Acceleration", "score": "—", "max": 75 },
+        { "event": "Skidpad", "score": "—", "max": 50 },
+        { "event": "Autocross", "score": "—", "max": 125 },
+        { "event": "Endurance", "score": "—", "max": 275 },
+        { "event": "Efficiency", "score": "—", "max": 100 },
+        { "event": "Overall", "score": "—", "max": 1000, "isTotal": true }
+      ],
+      "roster": [
+        { "name": "TBD", "role": "Team Manager" },
+        { "name": "TBD", "role": "Engineering Manager" },
+        { "name": "TBD", "role": "Business Manager" }
+      ],
+      "specs": {
+        "performance": [
+          { "label": "Weight (no driver)", "value": "TBD" },
+          { "label": "Wheelbase", "value": "TBD" },
+          { "label": "Track Width (F/R)", "value": "TBD" },
+          { "label": "Top Speed", "value": "TBD" },
+          { "label": "0–60 mph", "value": "TBD" }
+        ],
+        "powertrain_combustion": [
+          { "label": "Engine", "value": "TBD" },
+          { "label": "Displacement", "value": "TBD" },
+          { "label": "Induction", "value": "TBD" },
+          { "label": "Peak Power", "value": "TBD" },
+          { "label": "Peak Torque", "value": "TBD" },
+          { "label": "Fuel System", "value": "TBD" }
+        ],
+        "powertrain_electric": [
+          { "label": "Motor(s)", "value": "TBD" },
+          { "label": "Inverter", "value": "TBD" },
+          { "label": "Accumulator Capacity", "value": "TBD" },
+          { "label": "Accumulator Voltage", "value": "TBD" },
+          { "label": "Peak Power", "value": "TBD" },
+          { "label": "Peak Torque", "value": "TBD" }
+        ],
+        "chassis": [
+          { "label": "Frame Type", "value": "TBD" },
+          { "label": "Frame Material", "value": "TBD" },
+          { "label": "Front Suspension", "value": "TBD" },
+          { "label": "Rear Suspension", "value": "TBD" },
+          { "label": "Dampers", "value": "TBD" }
+        ],
+        "aero": {
+          "description": "Sample text: describe this year's aero package philosophy and key elements.",
+          "elements": [
+            { "label": "Front Wing", "value": "TBD" },
+            { "label": "Rear Wing", "value": "TBD" },
+            { "label": "Undertray", "value": "TBD" },
+            { "label": "Est. Cl", "value": "TBD" }
+          ]
+        },
+        "electrical": {
+          "description": "Sample text: describe the LV electrical system and data acquisition setup for this car.",
+          "elements": [
+            { "label": "LV Battery", "value": "TBD" },
+            { "label": "Data Acquisition", "value": "TBD" },
+            { "label": "Driver Dash", "value": "TBD" },
+            { "label": "Wiring Harness", "value": "TBD" }
+          ]
+        },
+        "notable": [
+          { "title": "Sample Highlight", "description": "Describe a standout design decision, first-time system, or notable achievement for this car here." }
+        ]
+      }
+    },
+    {
+      "id": "cr24",
+      "name": "CR-24",
+      "year": 2024,
+      "powertrainType": "combustion",
+      "designPhilosophy": "Sample text: describe this year's design philosophy here.",
+      "stats": [
+        { "label": "Overall Placement", "value": "TBD" },
+        { "label": "Weight", "value": "TBD" },
+        { "label": "Powertrain", "value": "Combustion" }
+      ],
+      "results": [
+        { "event": "Design", "score": "—", "max": 150 },
+        { "event": "Cost & Manufacturing", "score": "—", "max": 100 },
+        { "event": "Presentation", "score": "—", "max": 75 },
+        { "event": "Acceleration", "score": "—", "max": 75 },
+        { "event": "Skidpad", "score": "—", "max": 50 },
+        { "event": "Autocross", "score": "—", "max": 125 },
+        { "event": "Endurance", "score": "—", "max": 275 },
+        { "event": "Efficiency", "score": "—", "max": 100 },
+        { "event": "Overall", "score": "—", "max": 1000, "isTotal": true }
+      ],
+      "roster": [
+        { "name": "TBD", "role": "Team Manager" },
+        { "name": "TBD", "role": "Engineering Manager" },
+        { "name": "TBD", "role": "Business Manager" }
+      ],
+      "specs": {
+        "performance": [
+          { "label": "Weight (no driver)", "value": "TBD" },
+          { "label": "Wheelbase", "value": "TBD" },
+          { "label": "Track Width (F/R)", "value": "TBD" },
+          { "label": "Top Speed", "value": "TBD" },
+          { "label": "0–60 mph", "value": "TBD" }
+        ],
+        "powertrain_combustion": [
+          { "label": "Engine", "value": "TBD" },
+          { "label": "Displacement", "value": "TBD" },
+          { "label": "Induction", "value": "TBD" },
+          { "label": "Peak Power", "value": "TBD" },
+          { "label": "Peak Torque", "value": "TBD" },
+          { "label": "Fuel System", "value": "TBD" }
+        ],
+        "powertrain_electric": [],
+        "chassis": [
+          { "label": "Frame Type", "value": "TBD" },
+          { "label": "Frame Material", "value": "TBD" },
+          { "label": "Front Suspension", "value": "TBD" },
+          { "label": "Rear Suspension", "value": "TBD" },
+          { "label": "Dampers", "value": "TBD" }
+        ],
+        "aero": {
+          "description": "Sample text: describe this year's aero package.",
+          "elements": [
+            { "label": "Front Wing", "value": "TBD" },
+            { "label": "Rear Wing", "value": "TBD" },
+            { "label": "Undertray", "value": "TBD" },
+            { "label": "Est. Cl", "value": "TBD" }
+          ]
+        },
+        "electrical": {
+          "description": "Sample text: describe the LV electrical system for this car.",
+          "elements": [
+            { "label": "LV Battery", "value": "TBD" },
+            { "label": "Data Acquisition", "value": "TBD" },
+            { "label": "Driver Dash", "value": "TBD" },
+            { "label": "Wiring Harness", "value": "TBD" }
+          ]
+        },
+        "notable": [
+          { "title": "Sample Highlight", "description": "Describe a standout design decision or achievement for this car here." }
+        ]
+      }
+    }
+  ]
+}

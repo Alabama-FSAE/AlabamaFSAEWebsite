@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Crimson Racing — Loading screen (home page only, plays on every visit)
+   ========================================================================== */
+
+#loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: opacity 400ms var(--ease-standard);
+}
+#loading-screen.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-stage {
+  position: relative;
+  width: min(720px, 88vw);
+  height: 220px;
+}
+
+.loader-logo {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(340px, 60vw);
+  clip-path: inset(0 100% 0 0); /* revealed left-to-right by JS */
+}
+.loader-logo img { width: 100%; height: auto; }
+
+.loader-track {
+  position: absolute;
+  bottom: 54px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--color-neutral-300);
+}
+.loader-track__flag {
+  position: absolute;
+  top: 0; bottom: 0;
+  right: 0;
+  width: 15%;
+  background-image:
+    linear-gradient(45deg, var(--color-neutral-900) 25%, transparent 25%, transparent 75%, var(--color-neutral-900) 75%),
+    linear-gradient(45deg, var(--color-neutral-900) 25%, transparent 25%, transparent 75%, var(--color-neutral-900) 75%);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
+}
+
+.loader-car {
+  position: absolute;
+  bottom: 44px;
+  left: 0;
+  width: 84px;
+  will-change: transform;
+}
+.loader-car svg { display: block; width: 100%; height: auto; }
+
+.loader-speedlines {
+  position: absolute;
+  bottom: 66px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  will-change: transform;
+}
+.loader-speedlines span {
+  display: block;
+  height: 2px;
+  background: var(--color-primary-300);
+  width: 0;
+}
+
+.loader-skip {
+  position: absolute;
+  bottom: var(--space-5);
+  right: var(--space-5);
+  background: none;
+  border: none;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  padding: var(--space-2) var(--space-3);
+}
+.loader-skip:hover { color: var(--color-accent); }

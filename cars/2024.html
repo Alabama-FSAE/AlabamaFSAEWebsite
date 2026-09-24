@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CR-24 (2024) — Crimson Racing</title>
+<meta name="description" content="CR-24, Crimson Racing's 2024 Formula SAE car — full specs, competition results, and roster.">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/favicon/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/components.css">
+</head>
+<body data-car-id="cr24">
+
+<a href="#main" class="skip-link">Skip to content</a>
+<div data-include="/partials/header.html"></div>
+
+<!-- Sticky car-selector strip — shared across every car page, populated from cars.json -->
+<div class="car-strip-wrap">
+  <div class="car-strip" id="car-strip" aria-label="Choose a car"></div>
+</div>
+
+<main id="main">
+
+  <!-- Rotating hero photo/video gallery — populated + wired up by car-page.js / gallery.js -->
+  <div class="hero-gallery" id="hero-gallery" aria-label="CR-24 photo gallery"></div>
+
+  <!-- Results-forward overview -->
+  <section class="section" style="padding-bottom:0;">
+    <div class="container">
+      <span class="eyebrow">2024 Season</span>
+      <h1 id="car-title" style="font-size:var(--text-3xl); margin-block:var(--space-3) var(--space-5);">CR-24 — 2024</h1>
+      <p id="car-philosophy" class="text-muted" style="font-size:var(--text-lg); max-width:70ch; margin-bottom:var(--space-6);"></p>
+
+      <div id="car-stats" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:var(--space-5); margin-bottom:var(--space-7);"></div>
+    </div>
+  </section>
+
+  <section class="container results-overview">
+    <div>
+      <h2 style="font-size:var(--text-lg); margin-bottom:var(--space-4); padding-bottom:var(--space-2); border-bottom:2px solid var(--color-accent); display:inline-block;">Competition Results</h2>
+      <div id="car-results"></div>
+    </div>
+    <div>
+      <h2 style="font-size:var(--text-lg); margin-bottom:var(--space-4); padding-bottom:var(--space-2); border-bottom:2px solid var(--color-accent); display:inline-block;">Performance &amp; Dimensions</h2>
+      <div id="car-performance"></div>
+
+      <h2 style="font-size:var(--text-lg); margin-bottom:var(--space-4); padding-bottom:var(--space-2); border-bottom:2px solid var(--color-accent); display:inline-block;">Roster</h2>
+      <ul id="car-roster" class="spec-list" style="grid-template-columns:1fr;"></ul>
+    </div>
+  </section>
+
+  <!-- Five vertical tabs: Powertrain, Chassis & Suspension, Aero, Electrical, Notable/Other -->
+  <section class="container">
+    <div class="vtabs">
+      <div class="vtabs__list" role="tablist" aria-label="CR-24 technical sections">
+        <button class="vtabs__tab" role="tab" id="tab-powertrain" aria-controls="panel-powertrain" aria-selected="true" tabindex="0">Powertrain</button>
+        <button class="vtabs__tab" role="tab" id="tab-chassis" aria-controls="panel-chassis" aria-selected="false" tabindex="-1">Chassis &amp; Suspension</button>
+        <button class="vtabs__tab" role="tab" id="tab-aero" aria-controls="panel-aero" aria-selected="false" tabindex="-1">Aero</button>
+        <button class="vtabs__tab" role="tab" id="tab-electrical" aria-controls="panel-electrical" aria-selected="false" tabindex="-1">Electrical</button>
+        <button class="vtabs__tab" role="tab" id="tab-notable" aria-controls="panel-notable" aria-selected="false" tabindex="-1">Notable / Other</button>
+      </div>
+      <div class="vtabs__panels">
+        <div class="vtabs__panel is-active" id="panel-powertrain" role="tabpanel" aria-labelledby="tab-powertrain"></div>
+        <div class="vtabs__panel" id="panel-chassis" role="tabpanel" aria-labelledby="tab-chassis"></div>
+        <div class="vtabs__panel" id="panel-aero" role="tabpanel" aria-labelledby="tab-aero"></div>
+        <div class="vtabs__panel" id="panel-electrical" role="tabpanel" aria-labelledby="tab-electrical"></div>
+        <div class="vtabs__panel" id="panel-notable" role="tabpanel" aria-labelledby="tab-notable"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div data-include="/partials/footer.html"></div>
+
+<script src="/js/include.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/car-page.js"></script>
+<script src="/js/tabs.js"></script>
+</body>
+</html>
