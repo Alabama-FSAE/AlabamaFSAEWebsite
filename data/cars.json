@@ -1,0 +1,850 @@
+[
+  {
+    "id": "cr26e",
+    "name": "CR26E",
+    "year": 2026,
+    "status": "Current build",
+    "image": "assets/electric-car.jpg",
+    "award": "",
+    "results": [
+      {
+        "event": "Overall",
+        "placement": "Pending"
+      },
+      {
+        "event": "Design",
+        "placement": "Pending"
+      },
+      {
+        "event": "Acceleration",
+        "placement": "Pending"
+      },
+      {
+        "event": "Endurance",
+        "placement": "Pending"
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Name",
+        "role": "Team Manager"
+      },
+      {
+        "name": "Name",
+        "role": "Engineering Manager"
+      },
+      {
+        "name": "Name",
+        "role": "Business Manager"
+      },
+      {
+        "name": "Name",
+        "role": "Engineering Lead"
+      },
+      {
+        "name": "Name",
+        "role": "Engineering Lead"
+      },
+      {
+        "name": "Name",
+        "role": "Business Lead"
+      }
+    ],
+    "specifications": {
+      "Powertrain": "Details pending",
+      "Chassis": "Details pending",
+      "Weight": "Details pending",
+      "Suspension": "Details pending",
+      "Aerodynamics": "Details pending",
+      "Electronics": "Details pending"
+    },
+    "gallery": [
+      "assets/electric-car.jpg",
+      "assets/team-cr26.jpg",
+      "assets/hero-poster.jpg",
+      "assets/cr21.jpg"
+    ]
+  },
+  {
+    "id": "cr25",
+    "name": "CR25",
+    "year": 2025,
+    "status": "2025",
+    "image": "assets/team-cr26.jpg",
+    "award": "1st Place Cummins Sustainability Award",
+    "results": [
+      {
+        "event": "Overall",
+        "placement": "8th"
+      },
+      {
+        "event": "Design",
+        "placement": "7th"
+      },
+      {
+        "event": "Acceleration",
+        "placement": "14th"
+      },
+      {
+        "event": "Skidpad",
+        "placement": "14th"
+      },
+      {
+        "event": "Autocross",
+        "placement": "9th"
+      },
+      {
+        "event": "Endurance",
+        "placement": "6th"
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Katie Nash",
+        "role": "Team Manager"
+      },
+      {
+        "name": "Alex Dunn",
+        "role": "Engineering Manager"
+      },
+      {
+        "name": "AJ Torrillo",
+        "role": "Business Manager"
+      },
+      {
+        "name": "Lucas Overstreet",
+        "role": "Aerodynamics Lead"
+      },
+      {
+        "name": "Corbin Glancy",
+        "role": "Chassis Lead"
+      },
+      {
+        "name": "Robert Read",
+        "role": "Electrical Lead"
+      },
+      {
+        "name": "Connor Slomann",
+        "role": "Manufacturing Lead"
+      },
+      {
+        "name": "Jack Terrell",
+        "role": "Powertrain Lead"
+      },
+      {
+        "name": "Gabe Dennis",
+        "role": "Suspension Lead"
+      },
+      {
+        "name": "Mason Welsch",
+        "role": "Systems Integration Lead"
+      },
+      {
+        "name": "Riley Thompson",
+        "role": "Communications Lead"
+      },
+      {
+        "name": "Jake Matthews",
+        "role": "Finance Lead"
+      },
+      {
+        "name": "Jack Heeney",
+        "role": "Presentation Lead"
+      },
+      {
+        "name": "Kyle Tavarez",
+        "role": "Sponsorship Lead"
+      }
+    ],
+    "specifications": {
+      "Powertrain": "Details pending",
+      "Chassis": "Details pending",
+      "Weight": "Details pending",
+      "Suspension": "Details pending",
+      "Aerodynamics": "Details pending",
+      "Electronics": "Details pending"
+    },
+    "gallery": [
+      "assets/team-cr26.jpg",
+      "assets/team-cr26.jpg",
+      "assets/hero-poster.jpg",
+      "assets/cr21.jpg"
+    ]
+  },
+  {
+    "id": "cr22",
+    "name": "CR22",
+    "year": 2022,
+    "status": "2022",
+    "image": "assets/cr22.jpg",
+    "award": "",
+    "results": [
+      {
+        "event": "Overall",
+        "placement": "13th"
+      },
+      {
+        "event": "Design",
+        "placement": "11th"
+      },
+      {
+        "event": "Acceleration",
+        "placement": "5th"
+      },
+      {
+        "event": "Skidpad",
+        "placement": "20th"
+      },
+      {
+        "event": "Autocross",
+        "placement": "12th"
+      },
+      {
+        "event": "Endurance",
+        "placement": "14th"
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Jack Orear",
+        "role": "Team Manager"
+      },
+      {
+        "name": "Elliot Johnson",
+        "role": "Engineering Manager"
+      },
+      {
+        "name": "Hunter Melahn",
+        "role": "Business Manager"
+      },
+      {
+        "name": "Mason Welsch",
+        "role": "Aerodynamics Lead"
+      },
+      {
+        "name": "Corbin Glancy",
+        "role": "Chassis Lead"
+      },
+      {
+        "name": "Aaron Suarez",
+        "role": "Electrical Lead"
+      },
+      {
+        "name": "Gabe Dennis",
+        "role": "Manufacturing Lead"
+      },
+      {
+        "name": "Jack Terrell",
+        "role": "Powertrain Lead"
+      },
+      {
+        "name": "Logan Peltier",
+        "role": "Suspension Lead"
+      },
+      {
+        "name": "Blake Handschumacher",
+        "role": "Systems Integration Lead"
+      },
+      {
+        "name": "Riley Thompson",
+        "role": "Communications Lead"
+      },
+      {
+        "name": "Chris Ostrow",
+        "role": "Finance Lead"
+      },
+      {
+        "name": "Jack Heeney",
+        "role": "Presentation Lead"
+      },
+      {
+        "name": "Katie Nash",
+        "role": "Sponsorship Lead"
+      }
+    ],
+    "specifications": {
+      "Powertrain": "Details pending",
+      "Chassis": "Details pending",
+      "Weight": "Details pending",
+      "Suspension": "Details pending",
+      "Aerodynamics": "Details pending",
+      "Electronics": "Details pending"
+    },
+    "gallery": [
+      "assets/cr22.jpg",
+      "assets/team-cr26.jpg",
+      "assets/hero-poster.jpg",
+      "assets/cr21.jpg"
+    ]
+  },
+  {
+    "id": "cr21",
+    "name": "CR21",
+    "year": 2021,
+    "status": "2021",
+    "image": "assets/cr21.jpg",
+    "award": "",
+    "results": [
+      {
+        "event": "Michigan",
+        "placement": "5th"
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Lauren Woods",
+        "role": "Team Manager"
+      },
+      {
+        "name": "Markian Kuropas",
+        "role": "Engineering Manager"
+      },
+      {
+        "name": "Ben Silvey",
+        "role": "Business Manager"
+      },
+      {
+        "name": "Blake Handschumacher",
+        "role": "Aerodynamics Lead"
+      },
+      {
+        "name": "Corbin Glancy",
+        "role": "Chassis Lead"
+      },
+      {
+        "name": "Aaron Suarez",
+        "role": "Electrical Lead"
+      },
+      {
+        "name": "Noah Greer",
+        "role": "Powertrain Lead"
+      },
+      {
+        "name": "Mason Maze",
+        "role": "Suspension Lead"
+      },
+      {
+        "name": "Carmen Tizapa-Zamora & Riley Thompson",
+        "role": "Communications Leads"
+      },
+      {
+        "name": "Chris Ostrow",
+        "role": "Finance Lead"
+      },
+      {
+        "name": "Jack Heeney",
+        "role": "Presentation Lead"
+      }
+    ],
+    "specifications": {
+      "Powertrain": "Details pending",
+      "Chassis": "Details pending",
+      "Weight": "Details pending",
+      "Suspension": "Details pending",
+      "Aerodynamics": "Details pending",
+      "Electronics": "Details pending"
+    },
+    "gallery": [
+      "assets/cr21.jpg",
+      "assets/team-cr26.jpg",
+      "assets/hero-poster.jpg",
+      "assets/cr21.jpg"
+    ]
+  },
+  {
+    "id": "cr20",
+    "name": "CR20",
+    "year": 2020,
+    "status": "2020",
+    "image": "assets/hero-poster.jpg",
+    "award": "",
+    "results": [
+      {
+        "event": "Michigan",
+        "placement": "26th"
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Stephen Thomas",
+        "role": "Team Manager"
+      },
+      {
+        "name": "Garret Kingsbury",
+        "role": "Engineering Manager"
+      },
+      {
+        "name": "Jacob Paul",
+        "role": "Business Manager"
+      },
+      {
+        "name": "Markian Kuropas",
+        "role": "Aerodynamics Lead"
+      },
+      {
+        "name": "Joshua Cook",
+        "role": "Chassis Lead"
+      },
+      {
+        "name": "Max Glaser",
+        "role": "Composites Lead"
+      },
+      {
+        "name": "Aaron Suarez",
+        "role": "Electrical Lead"
+      },
+      {
+        "name": "Noah Greer",
+        "role": "Powertrain Lead"
+      },
+      {
+        "name": "Mason Maze",
+        "role": "Suspension Lead"
+      },
+      {
+        "name": "Samantha Boggs",
+        "role": "Advertising Lead"
+      },
+      {
+        "name": "Ben Silvey",
+        "role": "Finance Lead"
+      },
+      {
+        "name": "Lauren Woods",
+        "role": "Presentation Lead"
+      }
+    ],
+    "specifications": {
+      "Powertrain": "Details pending",
+      "Chassis": "Details pending",
+      "Weight": "Details pending",
+      "Suspension": "Details pending",
+      "Aerodynamics": "Details pending",
+      "Electronics": "Details pending"
+    },
+    "gallery": [
+      "assets/hero-poster.jpg",
+      "assets/team-cr26.jpg",
+      "assets/hero-poster.jpg",
+      "assets/cr21.jpg"
+    ]
+  },
+  {
+    "id": "cr19",
+    "name": "CR19",
+    "year": 2019,
+    "status": "2019",
+    "image": "assets/hero-poster.jpg",
+    "award": "",
+    "results": [
+      {
+        "event": "Michigan",
+        "placement": "10th"
+      },
+      {
+        "event": "Lincoln",
+        "placement": "22nd"
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Zach Hagan",
+        "role": "Team Captain"
+      },
+      {
+        "name": "Adam Parks",
+        "role": "Project Manager"
+      },
+      {
+        "name": "Marcos Canabal",
+        "role": "Powertrain Lead"
+      },
+      {
+        "name": "Matt Pilus",
+        "role": "Suspension Lead"
+      },
+      {
+        "name": "Tony Vangeersdaelen",
+        "role": "Chassis Lead"
+      },
+      {
+        "name": "Colin Bumgarner",
+        "role": "Aerodynamics Lead"
+      },
+      {
+        "name": "Ryan Fahy",
+        "role": "Electrical Lead"
+      },
+      {
+        "name": "Oakley Prell",
+        "role": "Business Lead"
+      }
+    ],
+    "specifications": {
+      "Powertrain": "Details pending",
+      "Chassis": "Details pending",
+      "Weight": "Details pending",
+      "Suspension": "Details pending",
+      "Aerodynamics": "Details pending",
+      "Electronics": "Details pending"
+    },
+    "gallery": [
+      "assets/hero-poster.jpg",
+      "assets/team-cr26.jpg",
+      "assets/hero-poster.jpg",
+      "assets/cr21.jpg"
+    ]
+  },
+  {
+    "id": "cr18",
+    "name": "CR18",
+    "year": 2018,
+    "status": "2018",
+    "image": "assets/cr21.jpg",
+    "award": "",
+    "results": [
+      {
+        "event": "Michigan",
+        "placement": "47th"
+      },
+      {
+        "event": "Lincoln",
+        "placement": "17th"
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Zach Hagan",
+        "role": "Team Captain"
+      },
+      {
+        "name": "Marcos Canabal",
+        "role": "Powertrain Lead"
+      },
+      {
+        "name": "John Harber",
+        "role": "Suspension Lead"
+      },
+      {
+        "name": "Tony Vangeersdaelen",
+        "role": "Chassis Lead"
+      },
+      {
+        "name": "Colin Bumgarner",
+        "role": "Aerodynamics Lead"
+      },
+      {
+        "name": "Adam Parks",
+        "role": "Business Lead"
+      }
+    ],
+    "specifications": {
+      "Powertrain": "Details pending",
+      "Chassis": "Details pending",
+      "Weight": "Details pending",
+      "Suspension": "Details pending",
+      "Aerodynamics": "Details pending",
+      "Electronics": "Details pending"
+    },
+    "gallery": [
+      "assets/cr21.jpg",
+      "assets/team-cr26.jpg",
+      "assets/hero-poster.jpg",
+      "assets/cr21.jpg"
+    ]
+  },
+  {
+    "id": "cr17",
+    "name": "CR17",
+    "year": 2017,
+    "status": "2017",
+    "image": "assets/cr22.jpg",
+    "award": "",
+    "results": [
+      {
+        "event": "Michigan",
+        "placement": "17th"
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Cole Frederick",
+        "role": "Team Captain"
+      },
+      {
+        "name": "David Barnes",
+        "role": "Business Lead"
+      },
+      {
+        "name": "Tony Wente",
+        "role": "Chassis"
+      },
+      {
+        "name": "Tony Vangeersdaelen",
+        "role": "Frame"
+      },
+      {
+        "name": "Aaron Suttle",
+        "role": "Powertrain"
+      },
+      {
+        "name": "Marcos Canabal",
+        "role": "Engine"
+      },
+      {
+        "name": "Chris New",
+        "role": "Electrical"
+      },
+      {
+        "name": "Zach Hagan",
+        "role": "Suspension"
+      }
+    ],
+    "specifications": {
+      "Powertrain": "Details pending",
+      "Chassis": "Details pending",
+      "Weight": "Details pending",
+      "Suspension": "Details pending",
+      "Aerodynamics": "Details pending",
+      "Electronics": "Details pending"
+    },
+    "gallery": [
+      "assets/cr22.jpg",
+      "assets/team-cr26.jpg",
+      "assets/hero-poster.jpg",
+      "assets/cr21.jpg"
+    ]
+  },
+  {
+    "id": "cr16",
+    "name": "CR16",
+    "year": 2016,
+    "status": "2016",
+    "image": "assets/cr21.jpg",
+    "award": "",
+    "results": [
+      {
+        "event": "Michigan",
+        "placement": "42nd"
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Cole Frederick",
+        "role": "Team Captain"
+      },
+      {
+        "name": "Vyt Puzinauskas",
+        "role": "Business Lead"
+      },
+      {
+        "name": "Tony Wente",
+        "role": "Frame"
+      },
+      {
+        "name": "Aaron Suttle",
+        "role": "Engine"
+      },
+      {
+        "name": "Chris New",
+        "role": "Electrical"
+      },
+      {
+        "name": "Alex Mitchell",
+        "role": "Composites"
+      },
+      {
+        "name": "Tony Vangeersdaelen",
+        "role": "Ergonomics"
+      },
+      {
+        "name": "Cole Frederick",
+        "role": "Suspension"
+      }
+    ],
+    "specifications": {
+      "Powertrain": "Details pending",
+      "Chassis": "Details pending",
+      "Weight": "Details pending",
+      "Suspension": "Details pending",
+      "Aerodynamics": "Details pending",
+      "Electronics": "Details pending"
+    },
+    "gallery": [
+      "assets/cr21.jpg",
+      "assets/team-cr26.jpg",
+      "assets/hero-poster.jpg",
+      "assets/cr21.jpg"
+    ]
+  },
+  {
+    "id": "cr15",
+    "name": "CR15",
+    "year": 2015,
+    "status": "2015",
+    "image": "assets/hero-poster.jpg",
+    "award": "",
+    "results": [
+      {
+        "event": "Michigan",
+        "placement": "85th"
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Cole Frederick",
+        "role": "Team Captain"
+      },
+      {
+        "name": "Vyt Puzinauskas",
+        "role": "Business Lead"
+      },
+      {
+        "name": "Tony Wente",
+        "role": "Frame"
+      },
+      {
+        "name": "Aaron Suttle",
+        "role": "Engine"
+      },
+      {
+        "name": "Chris New",
+        "role": "Electrical"
+      },
+      {
+        "name": "Alex Mitchell",
+        "role": "Composites"
+      },
+      {
+        "name": "Tony Wente",
+        "role": "Ergonomics"
+      },
+      {
+        "name": "Cole Frederick",
+        "role": "Suspension"
+      }
+    ],
+    "specifications": {
+      "Powertrain": "Details pending",
+      "Chassis": "Details pending",
+      "Weight": "Details pending",
+      "Suspension": "Details pending",
+      "Aerodynamics": "Details pending",
+      "Electronics": "Details pending"
+    },
+    "gallery": [
+      "assets/hero-poster.jpg",
+      "assets/team-cr26.jpg",
+      "assets/hero-poster.jpg",
+      "assets/cr21.jpg"
+    ]
+  },
+  {
+    "id": "cr14",
+    "name": "CR14",
+    "year": 2014,
+    "status": "2014",
+    "image": "assets/cr22.jpg",
+    "award": "",
+    "results": [
+      {
+        "event": "Michigan",
+        "placement": "93rd"
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Cole Frederick & Shanley Carlton",
+        "role": "Team Captains"
+      },
+      {
+        "name": "William Gray",
+        "role": "Business Lead"
+      },
+      {
+        "name": "Tony Wente",
+        "role": "Frame"
+      },
+      {
+        "name": "Aaron Suttle",
+        "role": "Engine"
+      },
+      {
+        "name": "Chris New",
+        "role": "Electronics"
+      },
+      {
+        "name": "Alex Mitchell",
+        "role": "Composites"
+      },
+      {
+        "name": "Josh Yarbrough",
+        "role": "Ergonomics"
+      },
+      {
+        "name": "Cole Frederick",
+        "role": "Suspension"
+      }
+    ],
+    "specifications": {
+      "Powertrain": "Details pending",
+      "Chassis": "Details pending",
+      "Weight": "Details pending",
+      "Suspension": "Details pending",
+      "Aerodynamics": "Details pending",
+      "Electronics": "Details pending"
+    },
+    "gallery": [
+      "assets/cr22.jpg",
+      "assets/team-cr26.jpg",
+      "assets/hero-poster.jpg",
+      "assets/cr21.jpg"
+    ]
+  },
+  {
+    "id": "cr13",
+    "name": "CR13",
+    "year": 2013,
+    "status": "2013",
+    "image": "assets/cr21.jpg",
+    "award": "",
+    "results": [
+      {
+        "event": "Michigan",
+        "placement": "98th"
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Rand Hutchison",
+        "role": "Team Captain"
+      },
+      {
+        "name": "Andrew Greff",
+        "role": "Powertrain"
+      },
+      {
+        "name": "Cole Frederick",
+        "role": "Suspension"
+      },
+      {
+        "name": "Alex Mitchell",
+        "role": "Composites"
+      }
+    ],
+    "specifications": {
+      "Powertrain": "Details pending",
+      "Chassis": "Details pending",
+      "Weight": "Details pending",
+      "Suspension": "Details pending",
+      "Aerodynamics": "Details pending",
+      "Electronics": "Details pending"
+    },
+    "gallery": [
+      "assets/cr21.jpg",
+      "assets/team-cr26.jpg",
+      "assets/hero-poster.jpg",
+      "assets/cr21.jpg"
+    ]
+  }
+]

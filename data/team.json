@@ -1,0 +1,41 @@
+{
+  "season": 2026,
+  "groups": [
+    {
+      "title": "Management",
+      "members": [
+        {"name": "Name Placeholder", "role": "Team Captain"},
+        {"name": "Name Placeholder", "role": "Chief Engineer"}
+      ]
+    },
+    {
+      "title": "Engineering Leads",
+      "members": [
+        {"name": "Name Placeholder", "role": "Aerodynamics Lead"},
+        {"name": "Name Placeholder", "role": "Chassis Lead"},
+        {"name": "Name Placeholder", "role": "Powertrain Lead"},
+        {"name": "Name Placeholder", "role": "Electrical Lead"}
+      ]
+    },
+    {
+      "title": "Business Leads",
+      "members": [
+        {"name": "Name Placeholder", "role": "Sponsorship Lead"},
+        {"name": "Name Placeholder", "role": "Communications Lead"}
+      ]
+    },
+    {
+      "title": "Directors",
+      "members": [
+        {"name": "Name Placeholder", "role": "Recruitment Director"},
+        {"name": "Name Placeholder", "role": "Recruitment Director"}
+      ]
+    }
+  ],
+  "facultySponsor": {
+    "name": "Name Placeholder",
+    "title": "Associate Professor · Student Challenge Projects Coordinator",
+    "education": "Ph.D. and M.S., Mechanical Engineering, University of Michigan\nB.S., Mechanical Engineering, University of Maryland",
+    "research": "Thermal systems\nEngines"
+  }
+}
