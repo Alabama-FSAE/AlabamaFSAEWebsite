@@ -1,76 +1,76 @@
 async function initializeCarArchive() {
   const response = await fetch("data/cars.json");
+  if (!response.ok) throw new Error("Car archive could not be loaded");
   const cars = await response.json();
-  const carList = document.getElementById("carList");
-  const carSteps = document.getElementById("carSteps");
-  carList.innerHTML = cars.map((car, index) => `
-    <div class="car-row${index === 0 ? " active" : ""}" data-index="${index}">
-      <button class="row-select" type="button" aria-label="Show ${car.name}">
-        <span class="car-index">${String(index + 1).padStart(2, "0")}</span>
-        <span class="car-name">${car.name}<span class="car-year">${car.year}</span></span>
-      </button>
-      <a class="row-arrow" href="car.html?car=${car.id}" aria-label="View ${car.name} details">
-        <svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>`).join("");
-  carSteps.innerHTML = cars.map((car, index) => `<div class="car-step" data-index="${index}"></div>`).join("");
-  const rows = [...document.querySelectorAll(".car-row")];
-  const steps = [...document.querySelectorAll(".car-step")];
-  const image = document.getElementById("stageImage");
-  const title = document.getElementById("stageTitle");
-  const year = document.getElementById("stageYear");
-  const kicker = document.getElementById("stageKicker");
-  const position = document.getElementById("stagePosition");
-  const count = document.getElementById("railCount");
-  let active = -1;
-  let timer;
+  const featured = cars.find(car => car.id === "cr26e");
+  const archive = cars.filter(car => car !== featured).sort((a, b) => b.year - a.year);
+  const featuredContainer = document.getElementById("featuredCar");
+  const grid = document.getElementById("carGrid");
+  const photoCars = new Set(["cr25", "cr22", "cr21"]);
 
-  cars.forEach(car => {
-    const preload = new Image();
-    preload.src = car.image;
-  });
-
-  function showCar(index, animate = true) {
-    if (index === active) return;
-    active = index;
-    const car = cars[index];
-    const number = String(index + 1).padStart(2, "0");
-    rows.forEach((row, i) => {
-      row.classList.toggle("active", i === index);
-      row.querySelector(".row-select").setAttribute("aria-pressed", i === index);
-    });
-    if (animate) {
-      image.classList.add("switching");
-      clearTimeout(timer);
-      timer = setTimeout(() => {
-        image.src = car.image;
-        image.alt = car.name;
-        image.classList.remove("switching");
-      }, 150);
-    } else {
-      image.src = car.image;
-      image.alt = car.name;
-    }
-    title.innerHTML = `CR<span>${car.name.replace("CR", "")}</span>`;
-    year.textContent = car.name.replace("CR", "");
-    kicker.textContent = `${number} // ${car.status}`;
-    position.textContent = `${number} / ${cars.length}`;
-    count.textContent = `${number} / ${cars.length}`;
-    rows[index].scrollIntoView({block: "nearest", inline: "nearest"});
+  if (featured) {
+    const section = document.createElement("article");
+    section.className = "featured";
+    const image = document.createElement("img");
+    image.className = "featured-image";
+    image.src = featured.image;
+    image.alt = featured.name;
+    const copy = document.createElement("div");
+    copy.className = "featured-copy";
+    const label = document.createElement("div");
+    label.className = "mono red";
+    label.textContent = "Current build // " + featured.year;
+    const title = document.createElement("h2");
+    title.textContent = featured.name;
+    const description = document.createElement("p");
+    description.textContent = "Meet Crimson Racing’s first electric vehicle and explore the team’s latest build.";
+    const link = document.createElement("a");
+    link.className = "btn featured-link";
+    link.href = `car.html?car=${encodeURIComponent(featured.id)}`;
+    link.textContent = "Explore " + featured.name + " →";
+    copy.append(label, title, description, link);
+    section.append(image, copy);
+    featuredContainer.append(section);
   }
 
-  rows.forEach((row, index) => row.querySelector(".row-select").addEventListener("click", () => {
-    const garage = document.getElementById("garage");
-    window.scrollTo({top: garage.offsetTop + steps[index].offsetTop + 2, behavior: "smooth"});
-    showCar(index);
-  }));
-
-  const observer = new IntersectionObserver(entries => {
-    const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-    if (visible) showCar(Number(visible.target.dataset.index));
-  }, {rootMargin: "-42% 0px -42% 0px", threshold: [0, .1, .25, .5, 1]});
-  steps.forEach(step => observer.observe(step));
-  showCar(0, false);
+  archive.forEach(car => {
+    const link = document.createElement("a");
+    link.className = "car-card";
+    link.href = `car.html?car=${encodeURIComponent(car.id)}`;
+    link.setAttribute("aria-label", `View ${car.name} details`);
+    let visual;
+    if (photoCars.has(car.id)) {
+      visual = document.createElement("img");
+      visual.className = "car-photo";
+      visual.src = car.image;
+      visual.alt = "";
+      visual.loading = "lazy";
+    } else {
+      visual = document.createElement("div");
+      visual.className = "car-placeholder";
+      visual.textContent = car.name;
+      visual.setAttribute("aria-hidden", "true");
+    }
+    const body = document.createElement("div");
+    body.className = "card-body";
+    const details = document.createElement("div");
+    const year = document.createElement("div");
+    year.className = "mono";
+    year.textContent = car.year;
+    const title = document.createElement("h3");
+    title.textContent = car.name;
+    const arrow = document.createElement("span");
+    arrow.className = "card-arrow";
+    arrow.setAttribute("aria-hidden", "true");
+    arrow.textContent = "→";
+    details.append(year, title);
+    body.append(details, arrow);
+    link.append(visual, body);
+    grid.append(link);
+  });
 }
 
-initializeCarArchive().catch(error => console.error("Car archive could not be loaded.", error));
+initializeCarArchive().catch(error => {
+  console.error(error);
+  document.getElementById("archiveError").hidden = false;
+});
