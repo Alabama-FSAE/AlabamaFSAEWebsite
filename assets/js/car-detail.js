@@ -24,11 +24,8 @@ async function renderCarDetail() {
   next.href = index < cars.length - 1 ? href(cars[index + 1]) : "#";
   next.style.visibility = index === cars.length - 1 ? "hidden" : "visible";
 
-  document.getElementById("heroStats").innerHTML = car.results.slice(0, 4).map(result =>
-    `<div><strong>${result.placement}</strong><span>${result.event}</span></div>`
-  ).join("");
-  document.getElementById("resultsList").innerHTML = car.results.map((result, i) =>
-    `<div class="timing-row"><span class="pos">${String(i + 1).padStart(2, "0")}</span><b>${result.event}</b><strong>${result.placement}</strong></div>`
+  document.getElementById("resultsList").innerHTML = car.results.map(result =>
+    `<div class="timing-row"><b>${result.event}</b><strong>${result.placement}</strong></div>`
   ).join("");
   document.getElementById("leadersList").innerHTML = car.leadership.map((person, i) =>
     `<article class="leader${i < 3 ? " manager" : ""}"><b>${person.name}</b><span>${person.role}</span></article>`
