@@ -16,3 +16,5 @@ header{height:78px;border-bottom:1px solid rgba(255,255,255,.2);background:linea
 .car-nav a{display:inline-flex;align-items:center;line-height:1;gap:10px;justify-self:start;transition:transform .2s ease;transform-origin:left center}.car-nav a:last-child{justify-self:end;transform-origin:right center}.car-nav a:hover,.car-nav a:focus-visible{transform:scale(1.03)}.car-nav a:focus-visible{outline:2px solid #fff;outline-offset:5px}.car-nav-arrow{display:block;flex:none;width:17px;height:17px;transform:translateY(-1px);fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}@media(prefers-reduced-motion:reduce){.car-nav a{transition:none}}
 
 @media(min-width:700px){.detail-hero .hero-copy{width:min(1320px,calc(100% - 42px))}}
+
+.detail-hero,.spec-visual{background-color:#1b1e23}.gallery-stage[hidden],.thumbs[hidden]{display:none}
