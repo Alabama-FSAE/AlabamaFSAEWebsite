@@ -8,7 +8,7 @@ async function renderTeam() {
       memberNumber += 1;
       return `<article class="member"><div class="member-photo" data-number="${String(memberNumber).padStart(2, "0")}"><span><b>Headshot needed</b><span>${member.name}</span></span></div><div class="member-copy"><strong>${member.name}</strong><small>${member.role}</small></div></article>`;
     }).join("");
-    return `<section class="roster-tier"><div class="tier-head"><span>${String(groupIndex + 1).padStart(2, "0")}</span><h3>${group.title}</h3></div><div class="member-list${group.members.length === 2 ? " two" : ""}">${members}</div></section>`;
+    return `<section class="roster-tier"><div class="tier-head"><span>${String(groupIndex + 1).padStart(2, "0")}</span><h3>${group.title}</h3></div><div class="member-list${group.title === "Management" ? " managers" : group.members.length === 2 ? " two" : ""}">${members}</div></section>`;
   }).join("");
 
   const faculty = team.facultySponsor;

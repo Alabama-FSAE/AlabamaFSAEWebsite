@@ -22,6 +22,7 @@
     @media(max-width:620px){.wrap{width:calc(100% - 28px)}header{height:70px}.links{top:70px}.team-photo-placeholder{aspect-ratio:4/3;background-size:36px 36px}.photo-label{padding:17px 20px}.photo-label b{font-size:1.55rem}.photo-corner{padding:8px 12px}.roster{padding:60px 0 65px}.section-head{display:block}.section-head p{margin-top:22px}.member-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.member-copy{padding:16px 13px 18px}.member-copy strong{font-size:1.35rem}.member-copy small{font-size:.58rem}.member-photo b{font-size:1.2rem}.faculty{margin-top:65px}.faculty-photo{min-height:360px}.faculty-copy{padding:38px 25px}.faculty-details{grid-template-columns:1fr;gap:24px}.join-grid{grid-template-columns:1fr}.join-action{text-align:left}.foot{display:block}.foot div+div{margin-top:10px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track{animation:none}}
     header{background:linear-gradient(180deg,rgba(4,5,7,.82),rgba(4,5,7,.06))}nav{color:#fff}header .btn-red{background:#9E1B32;border-color:#9E1B32}header .links a:not(.btn):after{background:#9E1B32}@media(min-width:561px) and (max-width:620px){header{height:78px}.links{top:78px}}
+    .member-list.managers{display:flex;justify-content:center;flex-wrap:wrap}.member-list.managers .member{width:calc((100% - 66px)/4)}@media(max-width:980px){.member-list.managers .member{width:calc((100% - 22px)/2)}}@media(max-width:620px){.member-list.managers .member{width:calc((100% - 12px)/2)}}
   </style>
   <link rel="stylesheet" href="assets/site-nav.css">
 </head>
@@ -29,7 +30,7 @@
   <div id="site-header"></div>
   <main>
     <section class="page-hero"><div class="team-photo-placeholder" role="img" aria-label="Placeholder for the 2026 Crimson Racing full team photograph"><div class="photo-label"><b>Full team photo</b><span>2026 leadership and team // image needed</span></div><div class="photo-corner">Crimson Racing // Alabama Formula SAE</div></div></section>
-    <section class="roster"><div class="wrap"><div class="section-head"><div><div class="mono kicker">Leadership roster // 2026 season</div><h2 class="display">Meet the<br><span class="red">team.</span></h2></div><p>Names, roles, and headshots are temporary placeholders ready to be replaced with the final team information.</p></div>
+    <section class="roster"><div class="wrap"><div class="section-head"><div><div class="mono kicker">Leadership roster // 2026 season</div><h2 class="display">Meet the<br><span class="red">team.</span></h2></div></div>
       <div id="teamRoster"></div>
       <section class="faculty"><div class="faculty-photo" role="img" aria-label="Faculty headshot placeholder"><div><b>Faculty photo needed</b><span>Name Placeholder</span></div></div><div class="faculty-copy"><div class="mono kicker">Faculty sponsor</div><h3 id="facultyName">Name<br>Placeholder</h3><div class="faculty-title" id="facultyTitle"></div><div class="faculty-details"><div><h4>Education</h4><p id="facultyEducation"></p></div><div><h4>Areas of research</h4><p id="facultyResearch"></p></div></div></div></section>
     </div></section>
@@ -38,6 +39,6 @@
   <div id="site-footer"></div>
   <script src="assets/js/navigation.js" defer></script>
   <script src="assets/js/includes.js" defer></script>
-  <script src="assets/js/team-page.js" defer></script>
+  <script src="assets/js/team-page.js?v=manager-center-1" defer></script>
 </body>
 </html>
