@@ -1,13 +1,18 @@
 async function renderCarDetail() {
   const response = await fetch("data/cars.json");
   const cars = await response.json();
+  const photosResponse = await fetch("data/car-photos.json");
+  if (!photosResponse.ok) throw new Error("Car photos could not be loaded");
+  const photosByCar = await photosResponse.json();
   const requested = new URLSearchParams(location.search).get("car") || "cr22";
   const index = Math.max(0, cars.findIndex(car => car.id === requested));
   const car = cars[index];
   const number = car.name.replace("CR", "");
+  const photos = photosByCar[car.id] || [];
+  const mainPhoto = photos[0];
 
   document.title = `${car.name} | Crimson Racing`;
-  document.getElementById("carHero").style.backgroundImage = `url('${car.image}')`;
+  document.getElementById("carHero").style.backgroundImage = mainPhoto ? `url("${encodeURI(mainPhoto)}")` : "none";
   document.getElementById("heroMeta").textContent = `${car.year} // Competition`;
   document.getElementById("carTitle").innerHTML = `CR<span class="red">${number}</span>`;
   document.getElementById("navCar").textContent = car.name;
@@ -30,21 +35,35 @@ async function renderCarDetail() {
   document.getElementById("leadersList").innerHTML = car.leadership.map((person, i) =>
     `<article class="leader${i < 3 ? " manager" : ""}"><b>${person.name}</b><span>${person.role}</span></article>`
   ).join("");
-  document.getElementById("specVisual").style.backgroundImage = `url('${car.image}')`;
+  document.getElementById("specVisual").style.backgroundImage = mainPhoto ? `url("${encodeURI(mainPhoto)}")` : "none";
   document.getElementById("specList").innerHTML = Object.entries(car.specifications).map(([name, value]) =>
     `<div class="spec-card"><span>${name}</span><strong>${value}</strong><small>Technical data to be added</small></div>`
   ).join("");
 
   const stage = document.getElementById("galleryStage");
   const thumbs = document.getElementById("thumbs");
-  stage.style.backgroundImage = `url('${car.gallery[0]}')`;
-  thumbs.innerHTML = car.gallery.map((image, i) =>
-    `<button class="thumb${i === 0 ? " active" : ""}" data-image="${image}" aria-label="Show archive image ${i + 1}" style="background-image:url('${image}')"></button>`
-  ).join("");
-  thumbs.querySelectorAll(".thumb").forEach(button => button.addEventListener("click", () => {
-    stage.style.backgroundImage = `url('${button.dataset.image}')`;
-    thumbs.querySelectorAll(".thumb").forEach(item => item.classList.toggle("active", item === button));
-  }));
+  const message = document.getElementById("galleryMessage");
+  if (!photos.length) {
+    stage.hidden = true;
+    thumbs.hidden = true;
+    message.textContent = "Photos for this car are coming soon.";
+  } else {
+    message.textContent = "Explore photos from this car’s archive.";
+    const showPhoto = image => { stage.style.backgroundImage = `url("${encodeURI(image)}")`; };
+    showPhoto(photos[0]);
+    photos.forEach((image, index) => {
+      const button = document.createElement("button");
+      button.className = "thumb" + (index === 0 ? " active" : "");
+      button.type = "button";
+      button.setAttribute("aria-label", `Show ${car.name} photo ${index + 1}`);
+      button.style.backgroundImage = `url("${encodeURI(image)}")`;
+      button.addEventListener("click", () => {
+        showPhoto(image);
+        thumbs.querySelectorAll(".thumb").forEach(item => item.classList.toggle("active", item === button));
+      });
+      thumbs.append(button);
+    });
+  }
 }
 
 renderCarDetail().catch(error => console.error("Car details could not be loaded.", error));
