@@ -2,19 +2,28 @@ async function initializeCarArchive() {
   const response = await fetch("data/cars.json");
   if (!response.ok) throw new Error("Car archive could not be loaded");
   const cars = await response.json();
+  const photosResponse = await fetch("data/car-photos.json");
+  if (!photosResponse.ok) throw new Error("Car photos could not be loaded");
+  const photosByCar = await photosResponse.json();
   const featured = cars.find(car => car.id === "cr26e");
   const archive = cars.filter(car => car !== featured).sort((a, b) => b.year - a.year);
   const featuredContainer = document.getElementById("featuredCar");
   const grid = document.getElementById("carGrid");
-  const photoCars = new Set(["cr25", "cr22", "cr21"]);
+
 
   if (featured) {
     const section = document.createElement("article");
     section.className = "featured";
-    const image = document.createElement("img");
-    image.className = "featured-image";
-    image.src = featured.image;
-    image.alt = featured.name;
+    const featuredPhotos = photosByCar[featured.id] || [];
+    const image = document.createElement(featuredPhotos.length ? "img" : "div");
+    image.className = featuredPhotos.length ? "featured-image" : "featured-image featured-placeholder";
+    if (featuredPhotos.length) {
+      image.src = featuredPhotos[0];
+      image.alt = featured.name;
+    } else {
+      image.textContent = featured.name;
+      image.setAttribute("aria-hidden", "true");
+    }
     const copy = document.createElement("div");
     copy.className = "featured-copy";
     const label = document.createElement("div");
@@ -39,10 +48,11 @@ async function initializeCarArchive() {
     link.href = `car.html?car=${encodeURIComponent(car.id)}`;
     link.setAttribute("aria-label", `View ${car.name} details`);
     let visual;
-    if (photoCars.has(car.id)) {
+    const photos = photosByCar[car.id] || [];
+    if (photos.length) {
       visual = document.createElement("img");
       visual.className = "car-photo";
-      visual.src = car.image;
+      visual.src = photos[0];
       visual.alt = "";
       visual.loading = "lazy";
     } else {
