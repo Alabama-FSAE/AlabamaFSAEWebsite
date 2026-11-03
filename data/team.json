@@ -5,7 +5,7 @@
       "title": "Management",
       "members": [
         {"name": "Ainsley Shaw", "role": "Team Manager"},
-        {"name": "James Zettler", "role": "Engineering Manager"}
+        {"name": "James Zettler", "role": "Engineering Manager"},
         {"name": "Kyle Tavarez", "role": "Business Manager"}
       ]
     },
@@ -19,7 +19,7 @@
         {"name": "Nathan Panning", "role": "Manufacturing Lead"},
         {"name": "Daniel Freeman", "role": "Powertrain Lead"},
         {"name": "Luke Lennon", "role": "Suspension Lead"},
-        {"name": "Matthew Jordan", "role": "Systems Engineering Lead"},
+        {"name": "Matthew Jordan", "role": "Systems Engineering Lead"}
       ]
     },
     {
