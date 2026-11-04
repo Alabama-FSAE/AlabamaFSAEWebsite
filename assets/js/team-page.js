@@ -6,7 +6,11 @@ async function renderTeam() {
   roster.innerHTML = team.groups.map((group, groupIndex) => {
     const members = group.members.map(member => {
       memberNumber += 1;
-      return `<article class="member"><div class="member-photo" data-number="${String(memberNumber).padStart(2, "0")}"><span><b>Headshot needed</b><span>${member.name}</span></span></div><div class="member-copy"><strong>${member.name}</strong><small>${member.role}</small></div></article>`;
+      const initials = member.name.split(" ").map(word => word[0]).join("");
+      const photo = member.photo
+        ? `<img src="${encodeURI(member.photo)}" alt="${member.name}" width="800" height="1000" loading="lazy">`
+        : `<b>${initials}</b>`;
+      return `<article class="member"><div class="member-photo${member.photo ? " has-photo" : ""}" data-number="${String(memberNumber).padStart(2, "0")}">${photo}</div><div class="member-copy"><strong>${member.name}</strong><small>${member.role}</small></div></article>`;
     }).join("");
     return `<section class="roster-tier"><div class="tier-head"><span>${String(groupIndex + 1).padStart(2, "0")}</span><h3>${group.title}</h3></div><div class="member-list${group.title === "Management" ? " managers" : group.members.length === 2 ? " two" : ""}">${members}</div></section>`;
   }).join("");
