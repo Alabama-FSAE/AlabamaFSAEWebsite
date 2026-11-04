@@ -16,6 +16,13 @@ async function renderTeam() {
   }).join("");
 
   const faculty = team.facultySponsor;
+  if (faculty.photo) {
+    const facultyPhoto = document.querySelector(".faculty-photo");
+    facultyPhoto.classList.add("has-photo");
+    facultyPhoto.removeAttribute("role");
+    facultyPhoto.removeAttribute("aria-label");
+    facultyPhoto.innerHTML = `<img src="${encodeURI(faculty.photo)}" alt="${faculty.name}" width="800" height="1000" loading="lazy">`;
+  }
   document.getElementById("facultyName").innerHTML = faculty.name.replace(" ", "<br>");
   document.getElementById("facultyTitle").textContent = faculty.title;
   document.getElementById("facultyEducation").innerHTML = faculty.education.replaceAll("\n", "<br>");
