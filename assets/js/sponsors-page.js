@@ -5,10 +5,10 @@ async function renderSponsors() {
     const tier = grid.dataset.sponsorTier;
     grid.innerHTML = sponsors.filter(sponsor => sponsor.tier === tier).map(sponsor => {
       const content = sponsor.logo
-        ? `<img src="${sponsor.logo}" alt="${sponsor.name}">`
+        ? `<img src="${sponsor.logo}" alt="${sponsor.name}" loading="lazy">`
         : `<div><b>${sponsor.name}</b><small>Logo artwork needed</small></div>`;
       return sponsor.website
-        ? `<a class="logo-card known" href="${sponsor.website}" target="_blank" rel="noopener">${content}</a>`
+        ? `<a class="logo-card known" href="${sponsor.website}" target="_blank" rel="noopener" aria-label="${sponsor.name} (opens in a new tab)">${content}</a>`
         : `<div class="logo-card${sponsor.name !== "Sponsor logo" ? " known" : ""}">${content}</div>`;
     }).join("");
   });
