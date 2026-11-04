@@ -5,6 +5,7 @@ async function initializeNavigation() {
   if (["cars.html", "car.html"].includes(path)) section = "cars";
   if (path === "team.html") section = "team";
   if (["sponsors.html", "sponsor-us.html"].includes(path)) section = "sponsors";
+  if (path === "contact.html") section = "contact";
   document.querySelector(`[data-nav="${section}"]`)?.setAttribute("aria-current", "page");
 
   const menuButton = document.getElementById("menuButton");
