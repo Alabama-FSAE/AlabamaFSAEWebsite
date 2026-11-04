@@ -1,44 +1,45 @@
 {
-  "season": 2026,
+  "season": "2026-2027",
   "groups": [
     {
       "title": "Management",
       "members": [
-        {"name": "Ainsley Shaw", "role": "Team Manager"},
-        {"name": "James Zettler", "role": "Engineering Manager"},
-        {"name": "Kyle Tavarez", "role": "Business Manager"}
+        {"name": "Ainsley Shaw", "role": "Team Manager", "photo": "assets/images/team/ainsley-shaw.jpg"},
+        {"name": "James Zettler", "role": "Engineering Manager", "photo": "assets/images/team/james-zettler.jpg"},
+        {"name": "Kyle Tavarez", "role": "Business Manager", "photo": "assets/images/team/kyle-tavarez.jpg"}
       ]
     },
     {
       "title": "Engineering Leads",
       "members": [
-        {"name": "Nick Clephas", "role": "Aerodynamics Lead"},
-        {"name": "Caleb Joseph", "role": "Chassis Lead"},
-        {"name": "Carly Ungerer", "role": "Electrical Lead"},
-        {"name": "Mikhail Rura", "role": "EV Power Systems Lead"},
-        {"name": "Nathan Panning", "role": "Manufacturing Lead"},
-        {"name": "Daniel Freeman", "role": "Powertrain Lead"},
-        {"name": "Luke Lennon", "role": "Suspension Lead"},
-        {"name": "Matthew Jordan", "role": "Systems Engineering Lead"}
+        {"name": "Nick Clephas", "role": "Aerodynamics Lead", "photo": "assets/images/team/nick-clephas.jpg"},
+        {"name": "Caleb Joseph", "role": "Chassis Lead", "photo": "assets/images/team/caleb-joseph.jpg"},
+        {"name": "Carly Ungerer", "role": "Electrical Lead", "photo": "assets/images/team/carly-ungerer.jpg"},
+        {"name": "Mikhail Rura", "role": "EV Power Systems Lead", "photo": "assets/images/team/mikhail-rura.jpg"},
+        {"name": "Nathan Panning", "role": "Manufacturing Lead", "photo": "assets/images/team/nathan-panning.jpg"},
+        {"name": "Daniel Freeman", "role": "Powertrain Lead", "photo": "assets/images/team/daniel-freeman.jpg"},
+        {"name": "Luke Lennon", "role": "Suspension Lead", "photo": "assets/images/team/luke-lennon.jpg"},
+        {"name": "Matthew Jordan", "role": "Systems Engineering Lead", "photo": "assets/images/team/matthew-jordan.jpg"}
       ]
     },
     {
       "title": "Business Leads",
       "members": [
-        {"name": "Christine Collins", "role": "Sponsorship Lead"},
-        {"name": "CC LeBlanc", "role": "Communications Lead"}
+        {"name": "Christine Collins", "role": "Sponsorship Lead", "photo": "assets/images/team/christine-collins.jpg"},
+        {"name": "CC LeBlanc", "role": "Communications Lead", "photo": "assets/images/team/cc-leblanc.jpg"}
       ]
     },
     {
       "title": "Directors",
       "members": [
-        {"name": "Anna Pennisi", "role": "Recruitment Director"},
-        {"name": "Ryan McKenzie", "role": "Recruitment Director"}
+        {"name": "Anna Pennisi", "role": "Recruitment Director", "photo": "assets/images/team/anna-pennisi.jpg"},
+        {"name": "Ryan McKenzie", "role": "Recruitment Director", "photo": "assets/images/team/ryan-mckenzie.jpg"}
       ]
     }
   ],
   "facultySponsor": {
     "name": "Dr. Paul Puzinauskas",
+    "photo": "assets/images/team/paul-puzinauskas.jpg",
     "title": "Associate Professor · Student Challenge Projects Coordinator",
     "education": "Ph.D. and M.S., Mechanical Engineering, University of Michigan\nB.S., Mechanical Engineering, University of Maryland",
     "research": "Thermal systems\nEngines"

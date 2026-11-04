@@ -66,6 +66,8 @@ To change the order, reorder that car's list in `data/car-photos.json`. **The fi
 
 Open `data/team.json` and change names or roles within the appropriate group. Keep the quotation marks around every text value.
 
+To add or change a headshot, follow the steps in `assets/images/team/README.md`.
+
 ## Update sponsors
 
 Open `data/sponsors.json`. Each sponsor has:
