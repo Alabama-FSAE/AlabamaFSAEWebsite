@@ -6,7 +6,8 @@ This is a plain HTML, CSS, and JavaScript website. It uses no build tools and ca
 
 ```text
 index.html, about.html, cars.html, car.html,    The pages. They stay in the top folder
-team.html, sponsors.html, sponsor-us.html       so their web addresses never change.
+team.html, sponsors.html, sponsor-us.html,      so their web addresses never change.
+contact.html
 data/
   cars.json            Each car's text, results, leaders, and specifications
   car-photos.json      Each car's photo list (updated by tools/process_photos.py)
