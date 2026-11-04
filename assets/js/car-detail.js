@@ -1,3 +1,5 @@
+const thumbnailFor = image => image.replace(/([^/]+)\.[^.]+$/, "thumbs/$1.jpg");
+
 async function renderCarDetail() {
   const response = await fetch("data/cars.json");
   const cars = await response.json();
@@ -56,7 +58,7 @@ async function renderCarDetail() {
       button.className = "thumb" + (index === 0 ? " active" : "");
       button.type = "button";
       button.setAttribute("aria-label", `Show ${car.name} photo ${index + 1}`);
-      button.style.backgroundImage = `url("${encodeURI(image)}")`;
+      button.style.backgroundImage = `url("${encodeURI(thumbnailFor(image))}")`;
       button.addEventListener("click", () => {
         showPhoto(image);
         thumbs.querySelectorAll(".thumb").forEach(item => item.classList.toggle("active", item === button));

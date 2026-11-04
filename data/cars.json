@@ -4,7 +4,6 @@
     "name": "CR26E",
     "year": 2026,
     "status": "Current build",
-    "image": "assets/electric-car.jpg",
     "award": "",
     "results": [
       {
@@ -57,20 +56,13 @@
       "Suspension": "Details pending",
       "Aerodynamics": "Details pending",
       "Electronics": "Details pending"
-    },
-    "gallery": [
-      "assets/electric-car.jpg",
-      "assets/team-cr26.jpg",
-      "assets/hero-poster.jpg",
-      "assets/cr21.jpg"
-    ]
+    }
   },
   {
     "id": "cr25",
     "name": "CR25",
     "year": 2025,
     "status": "2025",
-    "image": "assets/team-cr26.jpg",
     "award": "1st Place Cummins Sustainability Award",
     "results": [
       {
@@ -163,20 +155,13 @@
       "Suspension": "Details pending",
       "Aerodynamics": "Details pending",
       "Electronics": "Details pending"
-    },
-    "gallery": [
-      "assets/team-cr26.jpg",
-      "assets/team-cr26.jpg",
-      "assets/hero-poster.jpg",
-      "assets/cr21.jpg"
-    ]
+    }
   },
   {
     "id": "cr22",
     "name": "CR22",
     "year": 2022,
     "status": "2022",
-    "image": "assets/cr22.jpg",
     "award": "",
     "results": [
       {
@@ -269,20 +254,13 @@
       "Suspension": "Details pending",
       "Aerodynamics": "Details pending",
       "Electronics": "Details pending"
-    },
-    "gallery": [
-      "assets/cr22.jpg",
-      "assets/team-cr26.jpg",
-      "assets/hero-poster.jpg",
-      "assets/cr21.jpg"
-    ]
+    }
   },
   {
     "id": "cr21",
     "name": "CR21",
     "year": 2021,
     "status": "2021",
-    "image": "assets/cr21.jpg",
     "award": "",
     "results": [
       {
@@ -343,20 +321,13 @@
       "Suspension": "Details pending",
       "Aerodynamics": "Details pending",
       "Electronics": "Details pending"
-    },
-    "gallery": [
-      "assets/cr21.jpg",
-      "assets/team-cr26.jpg",
-      "assets/hero-poster.jpg",
-      "assets/cr21.jpg"
-    ]
+    }
   },
   {
     "id": "cr20",
     "name": "CR20",
     "year": 2020,
     "status": "2020",
-    "image": "assets/hero-poster.jpg",
     "award": "",
     "results": [
       {
@@ -421,20 +392,13 @@
       "Suspension": "Details pending",
       "Aerodynamics": "Details pending",
       "Electronics": "Details pending"
-    },
-    "gallery": [
-      "assets/hero-poster.jpg",
-      "assets/team-cr26.jpg",
-      "assets/hero-poster.jpg",
-      "assets/cr21.jpg"
-    ]
+    }
   },
   {
     "id": "cr19",
     "name": "CR19",
     "year": 2019,
     "status": "2019",
-    "image": "assets/hero-poster.jpg",
     "award": "",
     "results": [
       {
@@ -487,20 +451,13 @@
       "Suspension": "Details pending",
       "Aerodynamics": "Details pending",
       "Electronics": "Details pending"
-    },
-    "gallery": [
-      "assets/hero-poster.jpg",
-      "assets/team-cr26.jpg",
-      "assets/hero-poster.jpg",
-      "assets/cr21.jpg"
-    ]
+    }
   },
   {
     "id": "cr18",
     "name": "CR18",
     "year": 2018,
     "status": "2018",
-    "image": "assets/cr21.jpg",
     "award": "",
     "results": [
       {
@@ -545,20 +502,13 @@
       "Suspension": "Details pending",
       "Aerodynamics": "Details pending",
       "Electronics": "Details pending"
-    },
-    "gallery": [
-      "assets/cr21.jpg",
-      "assets/team-cr26.jpg",
-      "assets/hero-poster.jpg",
-      "assets/cr21.jpg"
-    ]
+    }
   },
   {
     "id": "cr17",
     "name": "CR17",
     "year": 2017,
     "status": "2017",
-    "image": "assets/cr22.jpg",
     "award": "",
     "results": [
       {
@@ -607,20 +557,13 @@
       "Suspension": "Details pending",
       "Aerodynamics": "Details pending",
       "Electronics": "Details pending"
-    },
-    "gallery": [
-      "assets/cr22.jpg",
-      "assets/team-cr26.jpg",
-      "assets/hero-poster.jpg",
-      "assets/cr21.jpg"
-    ]
+    }
   },
   {
     "id": "cr16",
     "name": "CR16",
     "year": 2016,
     "status": "2016",
-    "image": "assets/cr21.jpg",
     "award": "",
     "results": [
       {
@@ -669,20 +612,13 @@
       "Suspension": "Details pending",
       "Aerodynamics": "Details pending",
       "Electronics": "Details pending"
-    },
-    "gallery": [
-      "assets/cr21.jpg",
-      "assets/team-cr26.jpg",
-      "assets/hero-poster.jpg",
-      "assets/cr21.jpg"
-    ]
+    }
   },
   {
     "id": "cr15",
     "name": "CR15",
     "year": 2015,
     "status": "2015",
-    "image": "assets/hero-poster.jpg",
     "award": "",
     "results": [
       {
@@ -731,20 +667,13 @@
       "Suspension": "Details pending",
       "Aerodynamics": "Details pending",
       "Electronics": "Details pending"
-    },
-    "gallery": [
-      "assets/hero-poster.jpg",
-      "assets/team-cr26.jpg",
-      "assets/hero-poster.jpg",
-      "assets/cr21.jpg"
-    ]
+    }
   },
   {
     "id": "cr14",
     "name": "CR14",
     "year": 2014,
     "status": "2014",
-    "image": "assets/cr22.jpg",
     "award": "",
     "results": [
       {
@@ -793,20 +722,13 @@
       "Suspension": "Details pending",
       "Aerodynamics": "Details pending",
       "Electronics": "Details pending"
-    },
-    "gallery": [
-      "assets/cr22.jpg",
-      "assets/team-cr26.jpg",
-      "assets/hero-poster.jpg",
-      "assets/cr21.jpg"
-    ]
+    }
   },
   {
     "id": "cr13",
     "name": "CR13",
     "year": 2013,
     "status": "2013",
-    "image": "assets/cr21.jpg",
     "award": "",
     "results": [
       {
@@ -839,12 +761,6 @@
       "Suspension": "Details pending",
       "Aerodynamics": "Details pending",
       "Electronics": "Details pending"
-    },
-    "gallery": [
-      "assets/cr21.jpg",
-      "assets/team-cr26.jpg",
-      "assets/hero-poster.jpg",
-      "assets/cr21.jpg"
-    ]
+    }
   }
 ]

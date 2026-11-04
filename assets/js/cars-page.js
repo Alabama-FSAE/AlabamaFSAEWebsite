@@ -1,3 +1,5 @@
+const thumbnailFor = image => image.replace(/([^/]+)\.[^.]+$/, "thumbs/$1.jpg");
+
 async function initializeCarArchive() {
   const response = await fetch("data/cars.json");
   if (!response.ok) throw new Error("Car archive could not be loaded");
@@ -52,7 +54,7 @@ async function initializeCarArchive() {
     if (photos.length) {
       visual = document.createElement("img");
       visual.className = "car-photo";
-      visual.src = photos[0];
+      visual.src = thumbnailFor(photos[0]);
       visual.alt = "";
       visual.loading = "lazy";
     } else {

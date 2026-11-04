@@ -2,7 +2,7 @@ async function initializeNavigation() {
   const path = location.pathname.split("/").pop() || "index.html";
   let section = "home";
   if (path === "about.html") section = "about";
-  if (["cars.html", "car.html", "cr25.html"].includes(path)) section = "cars";
+  if (["cars.html", "car.html"].includes(path)) section = "cars";
   if (path === "team.html") section = "team";
   if (["sponsors.html", "sponsor-us.html"].includes(path)) section = "sponsors";
   document.querySelector(`[data-nav="${section}"]`)?.setAttribute("aria-current", "page");
