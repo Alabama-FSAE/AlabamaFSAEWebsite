@@ -5,8 +5,7 @@
       "title": "Management",
       "members": [
         {"name": "Ainsley Shaw", "role": "Team Manager", "photo": "assets/images/team/ainsley-shaw.jpg"},
-        {"name": "James Zettler", "role": "Engineering Manager", "photo": "assets/images/team/james-zettler.jpg"},
-        {"name": "Kyle Tavarez", "role": "Business Manager", "photo": "assets/images/team/kyle-tavarez.jpg"}
+        {"name": "James Zettler", "role": "Engineering Manager", "photo": "assets/images/team/james-zettler.jpg"}
       ]
     },
     {
