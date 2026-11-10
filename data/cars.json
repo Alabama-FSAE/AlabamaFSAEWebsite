@@ -59,6 +59,28 @@
     }
   },
   {
+    "id": "cr26i",
+    "name": "CR26I",
+    "year": 2026,
+    "status": "2026",
+    "award": "",
+    "results": [
+      {
+        "event": "Competition",
+        "placement": "Pending"
+      }
+    ],
+    "leadership": [],
+    "specifications": {
+      "Powertrain": "Details pending",
+      "Chassis": "Details pending",
+      "Weight": "Details pending",
+      "Suspension": "Details pending",
+      "Aerodynamics": "Details pending",
+      "Electronics": "Details pending"
+    }
+  },
+  {
     "id": "cr25",
     "name": "CR25",
     "year": 2025,
