@@ -26,10 +26,10 @@ async function renderCarDetail() {
   const href = item => `car.html?car=${item.id}`;
   const previous = document.getElementById("prevCar");
   const next = document.getElementById("nextCar");
-  previous.href = index > 0 ? href(cars[index - 1]) : "#";
-  previous.style.visibility = index === 0 ? "hidden" : "visible";
-  next.href = index < cars.length - 1 ? href(cars[index + 1]) : "#";
-  next.style.visibility = index === cars.length - 1 ? "hidden" : "visible";
+  previous.href = index < cars.length - 1 ? href(cars[index + 1]) : "#";
+  previous.style.visibility = index === cars.length - 1 ? "hidden" : "visible";
+  next.href = index > 0 ? href(cars[index - 1]) : "#";
+  next.style.visibility = index === 0 ? "hidden" : "visible";
 
   document.getElementById("resultsList").innerHTML = car.results.map(result =>
     `<div class="timing-row"><b>${result.event}</b><strong>${result.placement}</strong></div>`
