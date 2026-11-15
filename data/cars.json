@@ -25,28 +25,52 @@
     ],
     "leadership": [
       {
-        "name": "Name",
+        "name": "Ainsley Shaw",
         "role": "Team Manager"
       },
       {
-        "name": "Name",
+        "name": "James Zettler",
         "role": "Engineering Manager"
       },
       {
-        "name": "Name",
-        "role": "Business Manager"
+        "name": "Nick Clephas",
+        "role": "Aerodynamics Lead"
       },
       {
-        "name": "Name",
-        "role": "Engineering Lead"
+        "name": "Caleb Joseph",
+        "role": "Chassis Lead"
       },
       {
-        "name": "Name",
-        "role": "Engineering Lead"
+        "name": "Carly Ungerer",
+        "role": "Electrical Lead"
       },
       {
-        "name": "Name",
-        "role": "Business Lead"
+        "name": "Mikhail Rura",
+        "role": "EV Power Systems Lead"
+      },
+      {
+        "name": "Nathan Panning",
+        "role": "Manufacturing Lead"
+      },
+      {
+        "name": "Daniel Freeman",
+        "role": "Powertrain Lead"
+      },
+      {
+        "name": "Luke Lennon",
+        "role": "Suspension Lead"
+      },
+      {
+        "name": "Matthew Jordan",
+        "role": "Systems Engineering Lead"
+      },
+      {
+        "name": "Christine Collins",
+        "role": "Sponsorship Lead"
+      },
+      {
+        "name": "CC LeBlanc",
+        "role": "Communications Lead"
       }
     ],
     "specifications": {
@@ -70,7 +94,52 @@
         "placement": "Pending"
       }
     ],
-    "leadership": [],
+    "leadership": [
+      {
+        "name": "Ainsley Shaw",
+        "role": "Team Manager"
+      },
+      {
+        "name": "James Zettler",
+        "role": "Engineering Manager"
+      },
+      {
+        "name": "Nick Clephas",
+        "role": "Aerodynamics Lead"
+      },
+      {
+        "name": "Caleb Joseph",
+        "role": "Chassis Lead"
+      },
+      {
+        "name": "Carly Ungerer",
+        "role": "Electrical Lead"
+      },
+      {
+        "name": "Nathan Panning",
+        "role": "Manufacturing Lead"
+      },
+      {
+        "name": "Daniel Freeman",
+        "role": "Powertrain Lead"
+      },
+      {
+        "name": "Luke Lennon",
+        "role": "Suspension Lead"
+      },
+      {
+        "name": "Matthew Jordan",
+        "role": "Systems Engineering Lead"
+      },
+      {
+        "name": "Christine Collins",
+        "role": "Sponsorship Lead"
+      },
+      {
+        "name": "CC LeBlanc",
+        "role": "Communications Lead"
+      }
+    ],
     "specifications": {
       "Powertrain": "Details pending",
       "Chassis": "Details pending",
@@ -151,23 +220,11 @@
       },
       {
         "name": "Mason Welsch",
-        "role": "Systems Integration Lead"
+        "role": "Systems Engineering Lead"
       },
       {
         "name": "Riley Thompson",
         "role": "Communications Lead"
-      },
-      {
-        "name": "Jake Matthews",
-        "role": "Finance Lead"
-      },
-      {
-        "name": "Jack Heeney",
-        "role": "Presentation Lead"
-      },
-      {
-        "name": "Kyle Tavarez",
-        "role": "Sponsorship Lead"
       }
     ],
     "specifications": {
@@ -250,23 +307,15 @@
       },
       {
         "name": "Blake Handschumacher",
-        "role": "Systems Integration Lead"
-      },
-      {
-        "name": "Riley Thompson",
-        "role": "Communications Lead"
-      },
-      {
-        "name": "Chris Ostrow",
-        "role": "Finance Lead"
-      },
-      {
-        "name": "Jack Heeney",
-        "role": "Presentation Lead"
+        "role": "Systems Engineering Lead"
       },
       {
         "name": "Katie Nash",
         "role": "Sponsorship Lead"
+      },
+      {
+        "name": "Riley Thompson",
+        "role": "Communications Lead"
       }
     ],
     "specifications": {

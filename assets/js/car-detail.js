@@ -34,12 +34,11 @@ async function renderCarDetail() {
   document.getElementById("resultsList").innerHTML = car.results.map(result =>
     `<div class="timing-row"><b>${result.event}</b><strong>${result.placement}</strong></div>`
   ).join("");
-  document.getElementById("leadersList").innerHTML = car.leadership.map((person, i) =>
-    `<article class="leader${i < 3 ? " manager" : ""}"><b>${person.name}</b><span>${person.role}</span></article>`
+  document.getElementById("leadersList").innerHTML = car.leadership.map(person =>
+    `<article class="leader${/manager/i.test(person.role) ? " manager" : ""}"><b>${person.name}</b><span>${person.role}</span></article>`
   ).join("");
-  document.getElementById("specVisual").style.backgroundImage = mainPhoto ? `url("${encodeURI(mainPhoto)}")` : "none";
   document.getElementById("specList").innerHTML = Object.entries(car.specifications).map(([name, value]) =>
-    `<div class="spec-card"><span>${name}</span><strong>${value}</strong><small>Technical data to be added</small></div>`
+    `<div class="spec-card"><span>${name}</span><strong>${value}</strong></div>`
   ).join("");
 
   const stage = document.getElementById("galleryStage");
