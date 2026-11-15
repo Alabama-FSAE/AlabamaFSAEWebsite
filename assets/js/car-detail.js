@@ -50,20 +50,55 @@ async function renderCarDetail() {
     message.textContent = "Photos for this car are coming soon.";
   } else {
     message.textContent = "Explore photos from this car’s archive.";
-    const showPhoto = image => { stage.style.backgroundImage = `url("${encodeURI(image)}")`; };
-    showPhoto(photos[0]);
-    photos.forEach((image, index) => {
+    let currentPhoto = 0;
+    let navigationRequest = 0;
+    const previousPhoto = document.getElementById("galleryPrevious");
+    const nextPhoto = document.getElementById("galleryNext");
+    const showPhoto = photoIndex => {
+      currentPhoto = photoIndex;
+      stage.style.backgroundImage = `url("${encodeURI(photos[currentPhoto])}")`;
+      thumbs.querySelectorAll(".thumb").forEach((item, i) => {
+        item.classList.toggle("active", i === currentPhoto);
+        item.setAttribute("aria-pressed", String(i === currentPhoto));
+      });
+    };
+    photos.forEach((image, photoIndex) => {
       const button = document.createElement("button");
-      button.className = "thumb" + (index === 0 ? " active" : "");
+      button.className = "thumb";
       button.type = "button";
-      button.setAttribute("aria-label", `Show ${car.name} photo ${index + 1}`);
+      button.setAttribute("aria-label", `Show ${car.name} photo ${photoIndex + 1}`);
       button.style.backgroundImage = `url("${encodeURI(thumbnailFor(image))}")`;
       button.addEventListener("click", () => {
-        showPhoto(image);
-        thumbs.querySelectorAll(".thumb").forEach(item => item.classList.toggle("active", item === button));
+        navigationRequest++;
+        showPhoto(photoIndex);
       });
       thumbs.append(button);
     });
+    const movePhoto = async direction => {
+      const request = ++navigationRequest;
+      const start = currentPhoto;
+      for (let offset = 1; offset < photos.length; offset++) {
+        const candidate = (start + direction * offset + photos.length) % photos.length;
+        const exists = await new Promise(resolve => {
+          const image = new Image();
+          image.onload = () => resolve(true);
+          image.onerror = () => resolve(false);
+          image.src = encodeURI(photos[candidate]);
+        });
+        if (request !== navigationRequest) return;
+        if (exists) {
+          showPhoto(candidate);
+          return;
+        }
+      }
+    };
+    if (photos.length > 1) {
+      previousPhoto.hidden = false;
+      nextPhoto.hidden = false;
+      previousPhoto.addEventListener("click", () => movePhoto(-1));
+      nextPhoto.addEventListener("click", () => movePhoto(1));
+    }
+    showPhoto(0);
   }
 }
 
