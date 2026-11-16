@@ -90,17 +90,37 @@
     "award": "",
     "results": [
       {
-        "event": "Competition",
-        "placement": "Pending"
+        "event": "Overall",
+        "placement": "6th"
+      },
+      {
+        "event": "Design",
+        "placement": "6th"
+      },
+      {
+        "event": "Acceleration",
+        "placement": "6th"
+      },
+      {
+        "event": "Skidpad",
+        "placement": "3rd"
+      },
+      {
+        "event": "Autocross",
+        "placement": "11th"
+      },
+      {
+        "event": "Endurance",
+        "placement": "6th"
       }
     ],
     "leadership": [
       {
-        "name": "Ainsley Shaw",
+        "name": "Katie Nash",
         "role": "Team Manager"
       },
       {
-        "name": "James Zettler",
+        "name": "Corbin Glancy",
         "role": "Engineering Manager"
       },
       {
@@ -116,23 +136,23 @@
         "role": "Electrical Lead"
       },
       {
-        "name": "Nathan Panning",
+        "name": "Connor Slomann",
         "role": "Manufacturing Lead"
       },
       {
-        "name": "Daniel Freeman",
+        "name": "Jack Terrell",
         "role": "Powertrain Lead"
       },
       {
-        "name": "Luke Lennon",
+        "name": "Gabe Dennie",
         "role": "Suspension Lead"
       },
       {
-        "name": "Matthew Jordan",
+        "name": "Luke Mauer",
         "role": "Systems Engineering Lead"
       },
       {
-        "name": "Christine Collins",
+        "name": "Kyle Tavarez",
         "role": "Sponsorship Lead"
       },
       {
@@ -141,12 +161,11 @@
       }
     ],
     "specifications": {
-      "Powertrain": "Details pending",
-      "Chassis": "Details pending",
-      "Weight": "Details pending",
-      "Suspension": "Details pending",
-      "Aerodynamics": "Details pending",
-      "Electronics": "Details pending"
+      "Powertrain": "Yamaha R6",
+      "Chassis": "Space frame",
+      "Weight": "468 lbs",
+      "Suspension": "Double wishbone, pullrod actuation",
+      "Tires": "Hoosier R20 16x7.5-10"
     }
   },
   {
@@ -228,12 +247,11 @@
       }
     ],
     "specifications": {
-      "Powertrain": "Details pending",
-      "Chassis": "Details pending",
-      "Weight": "Details pending",
-      "Suspension": "Details pending",
-      "Aerodynamics": "Details pending",
-      "Electronics": "Details pending"
+      "Powertrain": "Yamaha R6",
+      "Chassis": "Space frame",
+      "Weight": "467 lbs",
+      "Suspension": "Double wishbone, pullrod actuation",
+      "Tires": "Hoosier R20 16x7.5-10"
     }
   },
   {
@@ -319,12 +337,11 @@
       }
     ],
     "specifications": {
-      "Powertrain": "Details pending",
-      "Chassis": "Details pending",
-      "Weight": "Details pending",
-      "Suspension": "Details pending",
-      "Aerodynamics": "Details pending",
-      "Electronics": "Details pending"
+      "Powertrain": "Yamaha R6",
+      "Chassis": "Space frame",
+      "Weight": "484 lbs",
+      "Suspension": "Double wishbone, pullrod actuation",
+      "Tires": "Hoosier LCO 18x6-10"
     }
   },
   {
