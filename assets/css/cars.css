@@ -20,3 +20,4 @@ header{height:78px;border-bottom:1px solid rgba(255,255,255,.2);background:linea
 .detail-hero{background-color:#1b1e23}.gallery-stage[hidden],.thumbs[hidden]{display:none}
 
 .gallery-stage{position:relative}.gallery-arrow{position:absolute;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:48px;height:48px;border:1px solid rgba(255,255,255,.7);background:rgba(0,0,0,.65);color:#fff;cursor:pointer;transition:background .2s,border-color .2s}.gallery-arrow[hidden]{display:none}.gallery-arrow:hover,.gallery-arrow:focus-visible{background:#9E1B32;border-color:#fff}.gallery-arrow:focus-visible{outline:2px solid #fff;outline-offset:3px}.gallery-arrow svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2}.gallery-previous{left:16px}.gallery-next{right:16px}
+.hero-notice{font:700 clamp(1.1rem,2vw,1.5rem)/1.3 Inter,Arial,sans-serif;color:#fff}

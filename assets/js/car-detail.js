@@ -22,6 +22,10 @@ async function renderCarDetail() {
   document.getElementById("teamMeta").textContent = `The team // ${car.year}`;
   document.getElementById("facultyText").textContent = "Faculty Advisor: Paul Puzinauskas";
   document.getElementById("awardText").textContent = car.award;
+  const notice = document.getElementById("heroNotice");
+  notice.textContent = car.notice || "";
+  notice.hidden = !car.notice;
+  document.getElementById("resultsSection").hidden = !car.results.length;
 
   const href = item => `car.html?car=${item.id}`;
   const previous = document.getElementById("prevCar");
