@@ -5,24 +5,8 @@
     "year": 2026,
     "status": "Current build",
     "award": "",
-    "results": [
-      {
-        "event": "Overall",
-        "placement": "Pending"
-      },
-      {
-        "event": "Design",
-        "placement": "Pending"
-      },
-      {
-        "event": "Acceleration",
-        "placement": "Pending"
-      },
-      {
-        "event": "Endurance",
-        "placement": "Pending"
-      }
-    ],
+    "notice": "Page pending, please pardon our progress.",
+    "results": [],
     "leadership": [
       {
         "name": "Ainsley Shaw",
